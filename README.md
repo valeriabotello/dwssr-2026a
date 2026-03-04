@@ -49,7 +49,9 @@ Documentar los sprints del proyecto que se realizará a lo largo del curso, apli
 ```bash
 feat: ⭐ Agregar automatización de usuarios
 ```
-
+# 📚 Stack
+## Back-End
+- [Node](./.github/doc/node.md)
 # 👩‍💻 Autor
 **Valeria Botello**  
 🔗 https://github.com/valeriabotello
