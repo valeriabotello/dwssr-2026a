@@ -4,9 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// registro de las rutas a los enrutadores
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+var authorRouter = require('./routes/author'); // Importamos el enrutador de author
 var app = express();
 
 // view engine setup
@@ -17,10 +18,15 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));// variable que el sistema provee para acceder a la carpeta public, 
+// donde se encuentran los archivos estáticos como css, js e imágenes
+console.log('Ruta de archivos estáticos:', path.join(__dirname, 'public'));
 
-app.use('/', indexRouter);
+// uso de las rutas y modificacion de la ruta para el index,
+//  agregando la ruta /index para que también renderice la vista index.hbs
+app.use(['/', '/index'], indexRouter);
 app.use('/users', usersRouter);
+app.use('/author', authorRouter); // Usamos el enrutador de author para la ruta /author 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
