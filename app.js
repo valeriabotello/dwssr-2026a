@@ -1,14 +1,32 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+// var createError = require('http-errors');
+import createError from 'http-errors'; // Importamos createError usando ES Modules
+// var express = require('express');
+import express from 'express'; // Importamos express usando ES Modules
+// var path = require('path');
+import path from 'node:path'; // Importamos path usando ES Modules
+// var cookieParser = require('cookie-parser');
+import cookieParser from 'cookie-parser'; // Importamos cookieParser usando ES Modules
+// var logger = require('morgan');
+import logger from 'morgan'; // Importamos logger usando ES Modules
+import {fileURLToPath} from 'url'; // Importamos fileURLToPath para recrear __filename y __dirname
 
-// registro de las rutas a los enrutadores
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var authorRouter = require('./routes/author'); // Importamos el enrutador de author
+// Recreando variables de path para ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename); 
+
 var app = express();
+// registro de las rutas a los enrutadores
+// require se utiliza para importar módulos en CommonJS, pero en ES Modules se utiliza import, 
+// por lo que se cambió la sintaxis de importación de las rutas. 
+// Además, se agregó la extensión .js a los archivos de rutas para que funcione correctamente con ES Modules.
+// var indexRouter = require('./routes/index');
+// var usersRouter = require('./routes/users');
+// var authorRouter = require('./routes/author'); // Importamos el enrutador de author
+
+// se cambio require por import y se agrego la extensión .js a los archivos de rutas para que funcione con ES Modules
+import indexRouter from './routes/index.js';// Importamos el enrutador de index
+import usersRouter from './routes/users.js';// Importamos el enrutador de users
+import authorRouter from './routes/author.js'; // Importamos el enrutador de author
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -44,4 +62,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+// module.exports = app
+export default app; // Exportamos la aplicación usando ES Modules 

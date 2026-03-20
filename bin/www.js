@@ -4,10 +4,16 @@
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('dwssr-2026a:server');
-var info = require('debug')('dwssr-2026a:info');
-var http = require('http');
+// var app = require('../app');
+import app from '../app.js'; // Importamos la aplicación usando ES Modules
+// var debug = require('debug')('dwssr-2026a:server');
+import createdebug from 'debug'; // Importamos debug usando ES Modules
+// var info = require('debug')('dwssr-2026a:info');
+// var http = require('http');
+import http from 'node:http'; // Importamos http usando ES Modules
+
+const debug = createdebug('dwssr-2026a:server'); // Creamos la función debug con el espacio de nombres 'dwssr-2026a:server'
+const info = createdebug('dwssr-2026a:info'); // Creamos la función info con el espacio de nombres 'dwssr-2026a:info'
 
 /**
  * Get port from environment and store in Express.
