@@ -16,5 +16,10 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
-  }
+  },
+  "imports": {
+    "#server/*": "./server/*",
+    "#routes/*": "./server/routes/*"
+    }
+
 }

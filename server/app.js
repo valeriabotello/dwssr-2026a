@@ -24,9 +24,9 @@ var app = express();
 // var authorRouter = require('./routes/author'); // Importamos el enrutador de author
 
 // se cambio require por import y se agrego la extensión .js a los archivos de rutas para que funcione con ES Modules
-import indexRouter from './routes/index.js';// Importamos el enrutador de index
-import usersRouter from './routes/users.js';// Importamos el enrutador de users
-import authorRouter from './routes/author.js'; // Importamos el enrutador de author
+import indexRouter from '#routes/index.js';// Importamos el enrutador de index
+import usersRouter from '#routes/users.js';// Importamos el enrutador de users
+import authorRouter from '#routes/author.js'; // Importamos el enrutador de author
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
