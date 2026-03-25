@@ -4,9 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "DEBUG=dwssr-2026a:* node ./bin/www",
-    "dev": "nodemon ./bin/www"
-  },
+  "start": "nodemon ./server/bin/www"
+},
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",

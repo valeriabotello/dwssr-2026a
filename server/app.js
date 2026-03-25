@@ -36,9 +36,9 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));// variable que el sistema provee para acceder a la carpeta public, 
+app.use(express.static(path.join(__dirname, '../public')));// variable que el sistema provee para acceder a la carpeta public, 
 // donde se encuentran los archivos estáticos como css, js e imágenes
-console.log('Ruta de archivos estáticos:', path.join(__dirname, 'public'));
+console.log('Ruta de archivos estáticos:', path.join(__dirname, '../public'));
 
 // uso de las rutas y modificacion de la ruta para el index,
 //  agregando la ruta /index para que también renderice la vista index.hbs
@@ -63,4 +63,4 @@ app.use(function(err, req, res, next) {
 });
 
 // module.exports = app
-export default app; // Exportamos la aplicación usando ES Modules 
+export default app; // Exportamos la aplicación usando ES Modules
