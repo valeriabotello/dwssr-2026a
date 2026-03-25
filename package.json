@@ -4,8 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-  "start": "nodemon ./server/bin/www"
-},
+    "start": "nodemon ./server/bin/www"
+  },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -15,11 +15,11 @@
     "morgan": "^1.10.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "vite": "^8.0.2"
   },
   "imports": {
     "#server/*": "./server/*",
     "#routes/*": "./server/routes/*"
-    }
-
+  }
 }
