@@ -9,6 +9,14 @@ import cookieParser from 'cookie-parser'; // Importamos cookieParser usando ES M
 // var logger = require('morgan');
 import logger from 'morgan'; // Importamos logger usando ES Modules
 import {fileURLToPath} from 'url'; // Importamos fileURLToPath para recrear __filename y __dirname
+import hbs from 'hbs'; // Importamos hbs para usar Handlebars como motor de plantillas
+
+// se cambio require por import y se agrego la extensión .js a los archivos de rutas para que funcione con ES Modules
+import indexRouter from '#routes/index.js';// Importamos el enrutador de index
+import usersRouter from '#routes/users.js';// Importamos el enrutador de users
+import authorRouter from '#routes/author.js'; // Importamos el enrutador de author
+// importando el registro del helper de Vite para Handlebars
+import { registerViteHelper } from './lib/vite.js'; // Importamos la función para registrar el helper de Vite
 
 // Recreando variables de path para ES Modules
 const __filename = fileURLToPath(import.meta.url);
@@ -22,15 +30,11 @@ var app = express();
 // var indexRouter = require('./routes/index');
 // var usersRouter = require('./routes/users');
 // var authorRouter = require('./routes/author'); // Importamos el enrutador de author
-
-// se cambio require por import y se agrego la extensión .js a los archivos de rutas para que funcione con ES Modules
-import indexRouter from '#routes/index.js';// Importamos el enrutador de index
-import usersRouter from '#routes/users.js';// Importamos el enrutador de users
-import authorRouter from '#routes/author.js'; // Importamos el enrutador de author
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+// Registramos el helper de Vite para ENGINE
+registerViteHelper(hbs); // Registramos el helper de Vite para Handlebars
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -39,6 +43,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));// variable que el sistema provee para acceder a la carpeta public, 
 // donde se encuentran los archivos estáticos como css, js e imágenes
 console.log('Ruta de archivos estáticos:', path.join(__dirname, '../public'));
+
+//ARCHIVOS ESTATICOS DE VITE
+if (process.env.VITE_DEV_SERVER === 'production') {
+app.use(express.static(path.join(__dirname, '..','dist'))); // Servimos los archivos estáticos de Vite desde la carpeta dist/vite
+}
+
 
 // uso de las rutas y modificacion de la ruta para el index,
 //  agregando la ruta /index para que también renderice la vista index.hbs
