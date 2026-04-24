@@ -4,22 +4,29 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "nodemon ./server/bin/www"
+    "start": "NODE_ENV=production node ./server/bin/www",
+    "dev": "DEBUG=dwssr-2026a:* nodemon ./server/bin/www",
+    "dev:vite": "vite",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:vite\"",
+    "build:front": "vite build",
+    "preview": "npm run build:front && npm run start"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "express": "^4.22.1",
-    "hbs": "^4.2.0",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
-    "morgan": "^1.10.1"
+    "http-proxy-middleware": "^3.0.5",
+    "morgan": "~1.9.1"
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "nodemon": "^3.1.14",
     "vite": "^8.0.2"
   },
   "imports": {
-    "#server/*": "./server/*",
-    "#routes/*": "./server/routes/*"
+    "#server/": "./server/",
+    "#routes/": "./server/routes/"
   }
 }

@@ -4,36 +4,28 @@
  * Module dependencies.
  */
 
-// var app = require('../app');
-import app from '../app.js'; // Importamos la aplicación usando ES Modules
-// var debug = require('debug')('dwssr-2026a:server');
-import createdebug from 'debug'; // Importamos debug usando ES Modules
-// var info = require('debug')('dwssr-2026a:info');
-// var http = require('http');
-import http from 'node:http'; // Importamos http usando ES Modules
-
-const debug = createdebug('dwssr-2026a:server'); // Creamos la función debug con el espacio de nombres 'dwssr-2026a:server'
-const info = createdebug('dwssr-2026a:info'); // Creamos la función info con el espacio de nombres 'dwssr-2026a:info'
+import app from '../app.js';
+import createDebug from 'debug';
+import http from 'node:http';
 
 /**
  * Get port from environment and store in Express.
  */
 
-info(`👀 Normalizing port`);
+console.info('🚀 Starting server...');
 var port = normalizePort(process.env.PORT || '3000');
-info(`✅ Port normalized ` + port);
 app.set('port', port);
+console.info('Server will listen on port ' + port);
 
 /**
  * Create HTTP server.
  */
-info (`🚀Starting server on port ${port}`)
+
 var server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
-
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
@@ -95,7 +87,6 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
+  console.log('Listening on ' + bind);
 
-  debug('🔊 Listening on ' + bind);
-  info(`✅ Server is listening on ${bind}`);
 }
