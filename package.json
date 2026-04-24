@@ -9,7 +9,8 @@
     "dev:vite": "vite",
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:vite\"",
     "build:front": "vite build",
-    "preview": "npm run build:front && npm run start"
+    "preview": "npm run build:front && npm run start",
+    "lint:back": "eslint server/"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -19,9 +20,13 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
   },
-  
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.1",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.5.0",
     "nodemon": "^3.1.14",
+    "prettier": "^3.8.3",
     "vite": "^8.0.2"
   },
   "imports": {

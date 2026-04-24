@@ -5,7 +5,6 @@ import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import { fileURLToPath } from 'url';
 import hbs from 'hbs';
-import { createProxyMiddleware } from 'http-proxy-middleware';
 
 import indexRouter from './routes/index.js';
 import usersRouter from './routes/users.js';
@@ -38,23 +37,13 @@ app.use(['/', '/index'], indexRouter);
 app.use('/users', usersRouter);
 app.use('/author', authorRouter);
 
-/* 🔥 PROXY SOLO PARA VITE */
-if (process.env.NODE_ENV !== 'production') {
-  app.use(
-    ['/src', '/@vite', '/node_modules'],
-    createProxyMiddleware({
-      target: 'http://localhost:5173', // 🔥 NO localhost en HTML, solo aquí
-      changeOrigin: true,
-      ws: true
-    })
-  );
-}
-
 /* errores */
 app.use((req, res, next) => {
   next(createError(404));
 });
 
+/* Manejador de errores final */
+// eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
