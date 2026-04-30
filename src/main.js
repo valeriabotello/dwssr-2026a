@@ -1,3 +1,6 @@
+// Importar un estilo
 import './styles/main.css';
+import './styles/header.css';
 
-console.log("vite + express + handlebars funcionando 🚀");
+// Scripts principales
+console.log("🚀 Vite + Express + Handlebars");

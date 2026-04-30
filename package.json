@@ -18,19 +18,23 @@
     "express": "^4.22.1",
     "hbs": "^4.2.1",
     "http-errors": "~1.6.3",
-    "morgan": "^1.10.1"
+    "morgan": "^1.10.1",
+    "vite": "^8.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@tailwindcss/postcss": "^4.2.4",
     "@tailwindcss/vite": "^4.2.4",
+    "autoprefixer": "^10.5.0",
+    "concurrently": "^9.2.1",
     "daisyui": "^5.5.19",
     "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^17.5.0",
     "nodemon": "^3.1.14",
+    "postcss": "^8.5.12",
     "prettier": "^3.8.3",
-    "tailwindcss": "^4.2.4",
-    "vite": "^8.0.2"
+    "tailwindcss": "^4.2.4"
   },
   "imports": {
     "#server/": "./server/",

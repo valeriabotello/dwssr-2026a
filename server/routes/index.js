@@ -1,10 +1,9 @@
-import express from 'express';
-
-const router = express.Router();
+import { Router } from 'express';
+const router = Router();
 
 /* GET home page. */
-router.get('/', (req, res) => {
-  res.render('index', { title: 'Proyecto magico 🌟🌟' });
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Proyecto Mágico ✨' });
 });
 
 export default router;

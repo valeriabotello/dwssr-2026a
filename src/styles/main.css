@@ -1,8 +1,10 @@
-/*estilos principales*/
-body {
-padding: 50px;
-front: 14px "lucida Grande", Helvetica, Arial, sans-serif;
-}
-h1 {
-    color: #00b7ff
-}
+@import "tailwindcss";
+@import "daisyui/daisyui.css";
+@import "./header.css"; /* Tu archivo de la imagen image_295fd7.png */
+
+/* Ruta para que Tailwind encuentre tus clases en las vistas */
+@source "../../server/views/**/*.hbs";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
