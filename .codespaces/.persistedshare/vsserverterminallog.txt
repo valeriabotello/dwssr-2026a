@@ -4797,3 +4797,1079 @@ LOGO=ubuntu-logo
 [[1m[38;2;99;143;79m1128519 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m34[39m[22m:[1m[38;2;86;156;214m05[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][0868c9ec][ExtensionHostConnection] The client has reconnected.
 [[1m[38;2;99;143;79m1229419 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m35[39m[22m:[1m[38;2;86;156;214m46[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][0868c9ec][ExtensionHostConnection] The client has reconnected.
 [[1m[38;2;99;143;79m1320453 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m37[39m[22m:[1m[38;2;86;156;214m17[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][21f6ceef][ManagementConnection] The client has reconnected.
+[1m[38;2;143;99;79m[2026017 ms] Stop[39m[22m (2025798 ms): Run in container: /bin/sh
+[1m[38;2;143;99;79m[2062697 ms] Stop[39m[22m (2062629 ms): Run in container: /bin/sh
+[1m[38;2;143;99;79m[2062698 ms] Stop[39m[22m (2062487 ms): Run in container: /bin/sh
+[1m[38;2;143;99;79m[2062725 ms] Stop[39m[22m (2061403 ms): Run in container: /home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/codespace/.vscode-remote --accept-server-license-terms --host [1m[38;2;86;156;214m127.0.0.1[39m[22m --port [1m[38;2;86;156;214m0[39m[22m --connection-token-file /home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b --extensions-download-dir /home/codespace/.vscode-remote/extensionsCache --start-server  --enable-remote-auto-shutdown --skip-requirements-check
+[1m[38;2;143;99;79m[2026063 ms] Stop[39m[22m (2026003 ms): Run in container: /bin/sh
+[[1m[38;2;99;143;79m22 ms[39m[22m] @microsoft/vscode-dev-containers-cli 0.95.0.
+[1m[38;2;99;143;79m[22 ms] Start[39m[22m: Resolving Remote for VSC start
+[1m[38;2;99;143;79m[24 ms] Start[39m[22m: Run: docker ps -q -a --filter label=Type=codespaces
+[1m[38;2;143;99;79m[52 ms] Stop[39m[22m (28 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[1m[38;2;99;143;79m[53 ms] Start[39m[22m: Run: docker inspect --type container 72fd548946c9
+[1m[38;2;143;99;79m[87 ms] Stop[39m[22m (34 ms): Run: docker inspect --type container 72fd548946c9
+[1m[38;2;99;143;79m[89 ms] Start[39m[22m: Inspecting container
+[1m[38;2;143;99;79m[89 ms] Stop[39m[22m (0 ms): Inspecting container
+[1m[38;2;99;143;79m[90 ms] Start[39m[22m: Run in container: /bin/sh
+[1m[38;2;99;143;79m[94 ms] Start[39m[22m: Run in container: uname -m
+[[1m[38;2;99;143;79m170 ms[39m[22m] x86_64
+[[1m[38;2;99;143;79m171 ms[39m[22m] 
+[1m[38;2;143;99;79m[171 ms] Stop[39m[22m (77 ms): Run in container: uname -m
+[1m[38;2;99;143;79m[171 ms] Start[39m[22m: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) [1m[38;2;86;156;214m2[39m[22m>/dev/null
+[[1m[38;2;99;143;79m177 ms[39m[22m] PRETTY_NAME="Ubuntu [1m[38;2;86;156;214m24.04.4[39m[22m LTS"
+NAME="Ubuntu"
+VERSION_ID="[1m[38;2;86;156;214m24.04[39m[22m"
+VERSION="[1m[38;2;86;156;214m24.04.4[39m[22m LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+[[1m[38;2;99;143;79m177 ms[39m[22m] 
+[1m[38;2;143;99;79m[177 ms] Stop[39m[22m (6 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) [1m[38;2;86;156;214m2[39m[22m>/dev/null
+[1m[38;2;99;143;79m[177 ms] Start[39m[22m: Run in container:  (command -v getent >/dev/null [1m[38;2;86;156;214m2[39m[22m>&[1m[38;2;86;156;214m1[39m[22m && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[1m[38;2;143;99;79m[183 ms] Stop[39m[22m (6 ms): Run in container:  (command -v getent >/dev/null [1m[38;2;86;156;214m2[39m[22m>&[1m[38;2;86;156;214m1[39m[22m && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[1m[38;2;99;143;79m[185 ms] Start[39m[22m: Run in container: test -d '/home/codespace/.vscode-remote'
+[[1m[38;2;99;143;79m187 ms[39m[22m] 
+[[1m[38;2;99;143;79m187 ms[39m[22m] 
+[1m[38;2;143;99;79m[187 ms] Stop[39m[22m (2 ms): Run in container: test -d '/home/codespace/.vscode-remote'
+[1m[38;2;99;143;79m[187 ms] Start[39m[22m: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[[1m[38;2;99;143;79m191 ms[39m[22m] 
+[[1m[38;2;99;143;79m192 ms[39m[22m] 
+[[1m[38;2;99;143;79m192 ms[39m[22m] Exit code [1m[38;2;86;156;214m1[39m[22m
+[1m[38;2;143;99;79m[192 ms] Stop[39m[22m (5 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[1m[38;2;99;143;79m[192 ms] Start[39m[22m: Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[[1m[38;2;99;143;79m225 ms[39m[22m] {
+	"go.toolsManagement.checkForUpdates": "local",
+	"go.useLanguageServer": ********,
+	"go.gopath": "/go",
+	"python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python3",
+	"jupyter.kernels.filter": [
+		{
+			"path": "/opt/conda/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python3",
+			"type": "pythonEnvironment"
+		}
+	],
+	"lldb.executable": "/usr/bin/lldb",
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "This workspace is in a dev container running on \"Ubuntu [1m[38;2;86;156;214m24.04.4[39m[22m LTS\".\n\nUse `\"$BROWSER\" <url>` to open a webpage in the host's default browser.\n\nSome of the command line tools available on the `PATH`: `apt`, `dpkg`, `docker`, `git`, `gh`, `kubectl`, `curl`, `wget`, `ssh`, `scp`, `rsync`, `gpg`, `ps`, `lsof`, `netstat`, `top`, `tree`, `find`, `grep`, `zip`, `unzip`, `tar`, `gzip`, `bzip2`, `xz`"
+		}
+	]
+}
+[[1m[38;2;99;143;79m226 ms[39m[22m] 
+[1m[38;2;143;99;79m[226 ms] Stop[39m[22m (34 ms): Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[1m[38;2;99;143;79m[231 ms] Start[39m[22m: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[[1m[38;2;99;143;79m235 ms[39m[22m] 
+[[1m[38;2;99;143;79m235 ms[39m[22m] 
+[[1m[38;2;99;143;79m235 ms[39m[22m] Exit code [1m[38;2;86;156;214m1[39m[22m
+[1m[38;2;143;99;79m[235 ms] Stop[39m[22m (4 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[1m[38;2;99;143;79m[236 ms] Start[39m[22m: Run in container: test -d '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m323 ms[39m[22m] 
+[[1m[38;2;99;143;79m323 ms[39m[22m] 
+[1m[38;2;143;99;79m[323 ms] Stop[39m[22m (87 ms): Run in container: test -d '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[1m[38;2;99;143;79m[323 ms] Start[39m[22m: Run in container: test -d '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m325 ms[39m[22m] 
+[[1m[38;2;99;143;79m325 ms[39m[22m] 
+[1m[38;2;143;99;79m[325 ms] Stop[39m[22m (2 ms): Run in container: test -d '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[1m[38;2;99;143;79m[325 ms] Start[39m[22m: Run in container: /bin/sh
+[1m[38;2;99;143;79m[330 ms] Start[39m[22m: Run in container: test -x '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[1m[38;2;99;143;79m[330 ms] Start[39m[22m: Run in container: touch '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m334 ms[39m[22m] 
+[[1m[38;2;99;143;79m334 ms[39m[22m] 
+[1m[38;2;143;99;79m[334 ms] Stop[39m[22m (4 ms): Run in container: test -x '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[1m[38;2;99;143;79m[334 ms] Start[39m[22m: Run in container: '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[[1m[38;2;99;143;79m1141 ms[39m[22m] 
+[[1m[38;2;99;143;79m1141 ms[39m[22m] 
+[1m[38;2;143;99;79m[1141 ms] Stop[39m[22m (811 ms): Run in container: touch '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m3538 ms[39m[22m] 
+[[1m[38;2;99;143;79m3538 ms[39m[22m] 
+[1m[38;2;143;99;79m[3538 ms] Stop[39m[22m (3204 ms): Run in container: '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[[1m[38;2;99;143;79m3539 ms[39m[22m] userEnvProbe: loginInteractiveShell (default)
+[1m[38;2;99;143;79m[3539 ms] Start[39m[22m: Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[[1m[38;2;99;143;79m3542 ms[39m[22m] 
+[[1m[38;2;99;143;79m3542 ms[39m[22m] 
+[1m[38;2;143;99;79m[3542 ms] Stop[39m[22m (3 ms): Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[1m[38;2;99;143;79m[3542 ms] Start[39m[22m: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[1m[38;2;143;99;79m[4059 ms] Stop[39m[22m (517 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[1m[38;2;99;143;79m[4059 ms] Start[39m[22m: Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[[1m[38;2;99;143;79m4065 ms[39m[22m] {}
+[[1m[38;2;99;143;79m4066 ms[39m[22m] 
+[1m[38;2;143;99;79m[4066 ms] Stop[39m[22m (7 ms): Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[1m[38;2;99;143;79m[4066 ms] Start[39m[22m: Run in container: cat '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/product.json'
+[1m[38;2;143;99;79m[4071 ms] Stop[39m[22m (5 ms): Run in container: cat '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/product.json'
+[[1m[38;2;99;143;79m4076 ms[39m[22m] Running extension host agents:
+[]
+[1m[38;2;99;143;79m[4076 ms] Start[39m[22m: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b' [1m[38;2;86;156;214m2[39m[22m>/dev/null || (umask [1m[38;2;86;156;214m377[39m[22m && echo 'f5acf0e8-52c3-4048-865e-8d488c87eabe' >'/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b-65b5862c-a0fd-4514-b150-9e5c713d9a0d' && mv -n '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b-65b5862c-a0fd-4514-b150-9e5c713d9a0d' '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b' && rm -f '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b-65b5862c-a0fd-4514-b150-9e5c713d9a0d' && cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b')
+[[1m[38;2;99;143;79m4086 ms[39m[22m] 2a4a86a7-f729-43bf-bc39-07f653de903e
+[[1m[38;2;99;143;79m4086 ms[39m[22m] 
+[1m[38;2;143;99;79m[4086 ms] Stop[39m[22m (10 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b' [1m[38;2;86;156;214m2[39m[22m>/dev/null || (umask [1m[38;2;86;156;214m377[39m[22m && echo 'f5acf0e8-52c3-4048-865e-8d488c87eabe' >'/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b-65b5862c-a0fd-4514-b150-9e5c713d9a0d' && mv -n '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b-65b5862c-a0fd-4514-b150-9e5c713d9a0d' '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b' && rm -f '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b-65b5862c-a0fd-4514-b150-9e5c713d9a0d' && cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b')
+[1m[38;2;99;143;79m[4086 ms] Start[39m[22m: Starting VS Code Server
+[1m[38;2;99;143;79m[4086 ms] Start[39m[22m: Preparing Extensions
+[1m[38;2;99;143;79m[4087 ms] Start[39m[22m: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[[1m[38;2;99;143;79m4089 ms[39m[22m] 
+[[1m[38;2;99;143;79m4089 ms[39m[22m] 
+[[1m[38;2;99;143;79m4089 ms[39m[22m] Exit code [1m[38;2;86;156;214m1[39m[22m
+[1m[38;2;143;99;79m[4089 ms] Stop[39m[22m (2 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[1m[38;2;99;143;79m[4089 ms] Start[39m[22m: Run in container: mkdir -p '/vscode/extensionsCache' && chown -R codespace /vscode/extensionsCache
+[[1m[38;2;99;143;79m4186 ms[39m[22m] 
+[[1m[38;2;99;143;79m4186 ms[39m[22m] 
+[1m[38;2;143;99;79m[4186 ms] Stop[39m[22m (97 ms): Run in container: mkdir -p '/vscode/extensionsCache' && chown -R codespace /vscode/extensionsCache
+[1m[38;2;99;143;79m[4186 ms] Start[39m[22m: Run in container: mkdir -p '/vscode/extensionsCache' && ln -s -T '/vscode/extensionsCache' '/home/codespace/.vscode-remote/extensionsCache' || ********
+[[1m[38;2;99;143;79m4224 ms[39m[22m] 
+[[1m[38;2;99;143;79m4224 ms[39m[22m] ln: failed to create symbolic link '/home/codespace/.vscode-remote/extensionsCache': File exists
+[1m[38;2;143;99;79m[4224 ms] Stop[39m[22m (38 ms): Run in container: mkdir -p '/vscode/extensionsCache' && ln -s -T '/vscode/extensionsCache' '/home/codespace/.vscode-remote/extensionsCache' || ********
+[1m[38;2;143;99;79m[4224 ms] Stop[39m[22m (138 ms): Preparing Extensions
+[1m[38;2;99;143;79m[4225 ms] Start[39m[22m: Run in container: /home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/codespace/.vscode-remote --accept-server-license-terms --host [1m[38;2;86;156;214m127.0.0.1[39m[22m --port [1m[38;2;86;156;214m0[39m[22m --connection-token-file /home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b --extensions-download-dir /home/codespace/.vscode-remote/extensionsCache --start-server  --enable-remote-auto-shutdown --skip-requirements-check
+[[1m[38;2;99;143;79m4678 ms[39m[22m] *
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+[[1m[38;2;99;143;79m4686 ms[39m[22m] Server bound to [1m[38;2;86;156;214m127.0.0.1[39m[22m:[1m[38;2;86;156;214m33183[39m[22m (IPv4)
+Extension host agent listening on [1m[38;2;86;156;214m33183[39m[22m
+
+[1m[38;2;143;99;79m[4686 ms] Stop[39m[22m (600 ms): Starting VS Code Server
+[1m[38;2;99;143;79m[4686 ms] Start[39m[22m: Run in container: echo [1m[38;2;86;156;214m33183[39m[22m >'/home/codespace/.vscode-remote/data/Machine/.devport-41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m4690 ms[39m[22m] 
+[[1m[38;2;99;143;79m4690 ms[39m[22m] 
+[1m[38;2;143;99;79m[4690 ms] Stop[39m[22m (4 ms): Run in container: echo [1m[38;2;86;156;214m33183[39m[22m >'/home/codespace/.vscode-remote/data/Machine/.devport-41dd792b5e652393e7787322889ed5fdc58bd75b'
+[1m[38;2;143;99;79m[4690 ms] Stop[39m[22m (4668 ms): Resolving Remote for VSC start
+[[1m[38;2;99;143;79m4823 ms[39m[22m] Ignoring option 'skip-requirements-check': not supported for server.
+[[1m[38;2;99;143;79m4844 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m46[39m[22m] Remote configuration data at /home/codespace/.vscode-remote
+[[1m[38;2;99;143;79m4845 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m46[39m[22m] process arguments: {
+  _: [],
+  host: '[1m[38;2;86;156;214m127.0.0.1[39m[22m',
+  port: '[1m[38;2;86;156;214m0[39m[22m',
+  'connection-token-file': '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b',
+  'without-connection-token': false,
+  'disable-websocket-compression': false,
+  'print-startup-performance': false,
+  'print-ip-address': false,
+  'accept-server-license-terms': ********,
+  'server-data-dir': '/home/codespace/.vscode-remote',
+  'enable-smoke-test-driver': false,
+  'disable-telemetry': false,
+  'disable-experiments': false,
+  'disable-workspace-trust': false,
+  log: [ 'trace' ],
+  'force-disable-user-env': ********,
+  'enable-sync': false,
+  'use-test-resolver': false,
+  'extensions-download-dir': '/home/codespace/.vscode-remote/extensionsCache',
+  'update-extensions': false,
+  'list-extensions': false,
+  'show-versions': false,
+  force: false,
+  'do-not-sync': false,
+  'do-not-include-pack-dependencies': false,
+  'pre-release': false,
+  'start-server': ********,
+  'enable-remote-auto-shutdown': ********,
+  'remote-auto-shutdown-without-delay': false,
+  'use-host-proxy': false,
+  'without-browser-env-var': false,
+  help: false,
+  version: false,
+  'user-data-dir': '/home/codespace/.vscode-remote/data',
+  'builtin-extensions-dir': '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b/extensions',
+  'extensions-dir': '/home/codespace/.vscode-remote/extensions',
+  logsPath: '/home/codespace/.vscode-remote/data/logs/20260506T160046'
+}
+[[1m[38;2;99;143;79m4846 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m46[39m[22m] 
+
+
+
+
+[[1m[38;2;99;143;79m4940 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m46[39m[22m] [File Watcher (node.js)] Request to start watching: /home/codespace/.vscode-remote/data/Machine (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>),/home/codespace/.vscode-remote/data/Machine/settings.json (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[[1m[38;2;99;143;79m4948 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m46[39m[22m] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/data/Machine'
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m46[39m[22m] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/data/Machine/settings.json'
+[[1m[38;2;99;143;79m5069 ms[39m[22m] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[[1m[38;2;99;143;79m5071 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m46[39m[22m] ServerLifetime: scheduling shutdown timer
+[[1m[38;2;99;143;79m5073 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m46[39m[22m] ExtensionManagementService#cleanUp
+[[1m[38;2;99;143;79m5073 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m46[39m[22m] ExtensionManagementService#removeTempDeleteFolders
+[[1m[38;2;99;143;79m5077 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m46[39m[22m] Extension host agent started.
+[[1m[38;2;99;143;79m5184 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] Request to start watching: /home/codespace/.vscode-remote/extensions (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[[1m[38;2;99;143;79m5190 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/ms-azuretools.vscode-docker-2.0.0
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/ritwickdey.liveserver-5.7.10
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/vscjava.vscode-java-pack-0.30.2025111702
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/esbenp.prettier-vscode-12.4.0
+[[1m[38;2;99;143;79m5192 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/extensions'
+[[1m[38;2;99;143;79m5214 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] Deleting extensions marked as removed: [
+  'ms-azuretools.vscode-containers-2.4.3',
+  'github.vscode-pull-request-github-0.140.0'
+]
+[[1m[38;2;99;143;79m5218 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] Request to start watching: /home/codespace/.vscode-remote/extensions/extensions.json (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[[1m[38;2;99;143;79m5491 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/extensions/extensions.json'
+[[1m[38;2;99;143;79m5707 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] Deleting marked for removal extension from disk github.vscode-pull-request-github /home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.140.0
+[[1m[38;2;99;143;79m5708 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] Deleting marked for removal extension from disk ms-azuretools.vscode-containers /home/codespace/.vscode-remote/extensions/ms-azuretools.vscode-containers-2.4.3
+[[1m[38;2;99;143;79m5711 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [raw] ["rename"] github.vscode-pull-request-github-0.140.0
+[[1m[38;2;99;143;79m5711 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [raw] ["rename"] github.vscode-pull-request-github-0.140.0.-6261b659.vsctmp
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [raw] ["rename"] ms-azuretools.vscode-containers-2.4.3
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [raw] ["rename"] ms-azuretools.vscode-containers-2.4.3.3503bf98.vsctmp
+[[1m[38;2;99;143;79m5802 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [raw] ["change"] .obsolete
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [CHANGED] /home/codespace/.vscode-remote/extensions/.obsolete
+[[1m[38;2;99;143;79m5878 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)]  >> normalized [CHANGED] /home/codespace/.vscode-remote/extensions/.obsolete
+[[1m[38;2;99;143;79m5925 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [DELETED] /home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.140.0
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [ADDED] /home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.140.0.-6261b659.vsctmp
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [DELETED] /home/codespace/.vscode-remote/extensions/ms-azuretools.vscode-containers-2.4.3
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [ADDED] /home/codespace/.vscode-remote/extensions/ms-azuretools.vscode-containers-2.4.3.3503bf98.vsctmp
+[[1m[38;2;99;143;79m5999 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)]  >> normalized [DELETED] /home/codespace/.vscode-remote/extensions/ms-azuretools.vscode-containers-2.4.3
+[[1m[38;2;99;143;79m6000 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)]  >> normalized [DELETED] /home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.140.0
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)]  >> normalized [ADDED] /home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.140.0.-6261b659.vsctmp
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)]  >> normalized [ADDED] /home/codespace/.vscode-remote/extensions/ms-azuretools.vscode-containers-2.4.3.3503bf98.vsctmp
+[[1m[38;2;99;143;79m6038 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [raw] ["rename"] ms-azuretools.vscode-containers-2.4.3.3503bf98.vsctmp
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] Deleted marked for removal extension from disk ms-azuretools.vscode-containers /home/codespace/.vscode-remote/extensions/ms-azuretools.vscode-containers-2.4.3
+[[1m[38;2;99;143;79m6039 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [raw] ["rename"] github.vscode-pull-request-github-0.140.0.-6261b659.vsctmp
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] Deleted marked for removal extension from disk github.vscode-pull-request-github /home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.140.0
+[[1m[38;2;99;143;79m6041 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [raw] ["change"] .obsolete
+[[1m[38;2;99;143;79m6041 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [CHANGED] /home/codespace/.vscode-remote/extensions/.obsolete
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [raw] ["change"] .obsolete
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [CHANGED] /home/codespace/.vscode-remote/extensions/.obsolete
+[[1m[38;2;99;143;79m6100 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m47[39m[22m] [File Watcher (node.js)] [raw] ["rename"] .obsolete
+[[1m[38;2;99;143;79m6127 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m48[39m[22m] [File Watcher (node.js)]  >> normalized [CHANGED] /home/codespace/.vscode-remote/extensions/.obsolete
+[[1m[38;2;99;143;79m6152 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m48[39m[22m] [File Watcher (node.js)] [DELETED] /home/codespace/.vscode-remote/extensions/ms-azuretools.vscode-containers-2.4.3.3503bf98.vsctmp
+[[1m[38;2;99;143;79m6154 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m48[39m[22m] [File Watcher (node.js)] [DELETED] /home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.140.0.-6261b659.vsctmp
+[[1m[38;2;99;143;79m6201 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m48[39m[22m] [File Watcher (node.js)] [DELETED] /home/codespace/.vscode-remote/extensions/.obsolete
+[[1m[38;2;99;143;79m6228 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m48[39m[22m] [File Watcher (node.js)]  >> normalized [DELETED] /home/codespace/.vscode-remote/extensions/.obsolete
+[[1m[38;2;99;143;79m6229 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m48[39m[22m] [File Watcher (node.js)]  >> normalized [DELETED] /home/codespace/.vscode-remote/extensions/ms-azuretools.vscode-containers-2.4.3.3503bf98.vsctmp
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m48[39m[22m] [File Watcher (node.js)]  >> normalized [DELETED] /home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.140.0.-6261b659.vsctmp
+[[1m[38;2;99;143;79m7108 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m48[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][0d22c9c0][ManagementConnection] New connection established.
+[[1m[38;2;99;143;79m7163 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] resolveShellEnv(): skipped (--force-disable-user-env)
+[[1m[38;2;99;143;79m7164 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] #[1m[38;2;86;156;214m1[39m[22m: https://mobile.events.data.microsoft.com/OneCollector/[1m[38;2;86;156;214m1.0[39m[22m?cors=********&content-type=application/x-json-stream - begin POST WS {
+  original: {
+    'Client-Id': 'NO_AUTH',
+    'client-version': '1DS-Web-JS-3.2.13',
+    apikey: '5bbf946d11a54f6783919c455abaddaf-fd62977b-c92d-4714-a45d-649d06980372-7168',
+    'upload-time': '[1m[38;2;86;156;214m1778083249050[39m[22m',
+    'time-delta-to-apply-millis': 'use-collector-delta',
+    'cache-control': 'no-cache, no-store',
+    'content-type': 'application/x-json-stream',
+    'Content-Type': 'application/json',
+    'Content-Length': '[1m[38;2;86;156;214m2356[39m[22m'
+  },
+  headers: [Object: null prototype] {
+    'Client-Id': 'NO_AUTH',
+    'client-version': '1DS-Web-JS-3.2.13',
+    apikey: '5bbf946d11a54f6783919c455abaddaf-fd62977b-c92d-4714-a45d-649d06980372-7168',
+    'upload-time': '[1m[38;2;86;156;214m1778083249050[39m[22m',
+    'time-delta-to-apply-millis': 'use-collector-delta',
+    'cache-control': 'no-cache, no-store',
+    'content-type': 'application/x-json-stream',
+    'Content-Type': 'application/json',
+    'Content-Length': '[1m[38;2;86;156;214m2356[39m[22m'
+  }
+}
+[[1m[38;2;99;143;79m7363 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][4535ff13][ExtensionHostConnection] - startParams language: es
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][4535ff13][ExtensionHostConnection] - startParams env: {}
+[[1m[38;2;99;143;79m7365 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][4535ff13][ExtensionHostConnection] New connection established.
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] ServerLifetime: consumer 'ExtensionHost:4535ff13' active (total: [1m[38;2;86;156;214m1[39m[22m)
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] ServerLifetime: cancelling shutdown timer
+[[1m[38;2;99;143;79m7370 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] resolveShellEnv(): skipped (--force-disable-user-env)
+[[1m[38;2;99;143;79m7371 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] [reconnection-grace-time] Setting VSCODE_RECONNECTION_GRACE_TIME env var for extension host: 10800000ms (10800s)
+[[1m[38;2;99;143;79m7386 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][4535ff13][ExtensionHostConnection] <[1m[38;2;86;156;214m605[39m[22m> Launched Extension Host Process.
+[[1m[38;2;99;143;79m7667 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][4535ff13][ExtensionHostConnection] <[1m[38;2;86;156;214m605[39m[22m> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+[[1m[38;2;99;143;79m7714 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] [reconnection-grace-time] Server sending grace time to client: 10800000ms (10800s)
+[[1m[38;2;99;143;79m7716 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] ExtensionManagementService.updateControlCache
+[[1m[38;2;99;143;79m7717 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] Started scanning system extensions
+[[1m[38;2;99;143;79m7718 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] Started scanning user extensions Fs {
+  scheme: 'file',
+  authority: '',
+  path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+  query: '',
+  fragment: '',
+  _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+  _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+}
+[[1m[38;2;99;143;79m7719 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] Started scanning user extensions Fs {
+  scheme: 'file',
+  authority: '',
+  path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+  query: '',
+  fragment: '',
+  _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+  _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+}
+[[1m[38;2;99;143;79m7719 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] Scanning extensions using UI language: es
+[[1m[38;2;99;143;79m7723 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] resolveShellEnv(): skipped (--force-disable-user-env)
+[[1m[38;2;99;143;79m7724 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] #[1m[38;2;86;156;214m2[39m[22m: https://main.vscode-cdn.net/extensions/marketplace.json - begin GET WS { original: {}, headers: [Object: null prototype] {} }
+[[1m[38;2;99;143;79m7732 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] Writing language packs {"es":{"hash":"60d72bcaa61761ae43596e25526daed0","extensions":[{"extensionIdentifier":{"id":"ms-ceintl.vscode-language-pack-es","uuid":"47e020a1-33db-4cc0-a1b4-42f97781749a"},"version":"[1m[38;2;86;156;214m1.110.2026050117[39m[22m"}],"translations":{"vscode":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/main.i18n.json","ms-vscode.js-debug":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/ms-vscode.js-debug.i18n.json","vscode.bat":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.bat.i18n.json","vscode.builtin-notebook-renderers":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.builtin-notebook-renderers.i18n.json","vscode.clojure":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.clojure.i18n.json","vscode.coffeescript":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.coffeescript.i18n.json","vscode.configuration-editing":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.configuration-editing.i18n.json","vscode.cpp":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.cpp.i18n.json","vscode.csharp":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.csharp.i18n.json","vscode.css-language-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.css-language-features.i18n.json","vscode.css":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.css.i18n.json","vscode.dart":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.dart.i18n.json","vscode.debug-auto-launch":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.debug-auto-launch.i18n.json","vscode.debug-server-ready":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.debug-server-ready.i18n.json","vscode.diff":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.diff.i18n.json","vscode.docker":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.docker.i18n.json","vscode.dotenv":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.dotenv.i18n.json","vscode.emmet":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.emmet.i18n.json","vscode.extension-editing":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.extension-editing.i18n.json","vscode.fsharp":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.fsharp.i18n.json","vscode.git-base":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.git-base.i18n.json","vscode.git":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.git.i18n.json","vscode.github-authentication":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.github-authentication.i18n.json","vscode.github":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.github.i18n.json","vscode.go":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.go.i18n.json","vscode.groovy":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.groovy.i18n.json","vscode.grunt":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.grunt.i18n.json","vscode.gulp":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.gulp.i18n.json","vscode.handlebars":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.handlebars.i18n.json","vscode.hlsl":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.hlsl.i18n.json","vscode.html-language-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.html-language-features.i18n.json","vscode.html":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.html.i18n.json","vscode.ini":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.ini.i18n.json","vscode.ipynb":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.ipynb.i18n.json","vscode.jake":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.jake.i18n.json","vscode.java":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.java.i18n.json","vscode.javascript":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.javascript.i18n.json","vscode.json-language-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.json-language-features.i18n.json","vscode.json":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.json.i18n.json","vscode.julia":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.julia.i18n.json","vscode.latex":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.latex.i18n.json","vscode.less":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.less.i18n.json","vscode.log":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.log.i18n.json","vscode.lua":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.lua.i18n.json","vscode.make":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.make.i18n.json","vscode.markdown-language-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.markdown-language-features.i18n.json","vscode.markdown-math":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.markdown-math.i18n.json","vscode.markdown":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.markdown.i18n.json","vscode.media-preview":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.media-preview.i18n.json","vscode.merge-conflict":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.merge-conflict.i18n.json","vscode.mermaid-chat-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.mermaid-chat-features.i18n.json","vscode.microsoft-authentication":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.microsoft-authentication.i18n.json","vscode.npm":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.npm.i18n.json","vscode.objective-c":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.objective-c.i18n.json","vscode.perl":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.perl.i18n.json","vscode.php-language-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.php-language-features.i18n.json","vscode.php":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.php.i18n.json","vscode.powershell":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.powershell.i18n.json","vscode.prompt":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.prompt.i18n.json","vscode.pug":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.pug.i18n.json","vscode.python":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.python.i18n.json","vscode.r":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.r.i18n.json","vscode.razor":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.razor.i18n.json","vscode.references-view":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.references-view.i18n.json","vscode.restructuredtext":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.restructuredtext.i18n.json","vscode.ruby":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.ruby.i18n.json","vscode.rust":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.rust.i18n.json","vscode.scss":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.scss.i18n.json","vscode.search-result":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.search-result.i18n.json","vscode.shaderlab":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.shaderlab.i18n.json","vscode.shellscript":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.shellscript.i18n.json","vscode.simple-browser":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.simple-browser.i18n.json","vscode.sql":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.sql.i18n.json","vscode.swift":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.swift.i18n.json","vscode.terminal-suggest":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.terminal-suggest.i18n.json","vscode.theme-2026":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-2026.i18n.json","vscode.theme-abyss":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-abyss.i18n.json","vscode.theme-defaults":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-defaults.i18n.json","vscode.theme-kimbie-dark":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-kimbie-dark.i18n.json","vscode.theme-monokai-dimmed":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-monokai-dimmed.i18n.json","vscode.theme-monokai":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-monokai.i18n.json","vscode.theme-quietlight":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-quietlight.i18n.json","vscode.theme-red":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-red.i18n.json","vscode.theme-solarized-dark":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-solarized-dark.i18n.json","vscode.theme-solarized-light":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-solarized-light.i18n.json","vscode.theme-tomorrow-night-blue":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-tomorrow-night-blue.i18n.json","vscode.tunnel-forwarding":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.tunnel-forwarding.i18n.json","vscode.typescript-language-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.typescript-language-features.i18n.json","vscode.typescript":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.typescript.i18n.json","vscode.vb":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.vb.i18n.json","vscode.vscode-theme-seti":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.vscode-theme-seti.i18n.json","vscode.xml":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.xml.i18n.json","vscode.yaml":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.yaml.i18n.json"},"label":"español"}}
+[[1m[38;2;99;143;79m7797 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] Language Pack es is already installed. Skipping language pack installation.
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] Started scanning system extensions
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] Started scanning user extensions Fs {
+  scheme: 'file',
+  authority: '',
+  path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+  query: '',
+  fragment: '',
+  _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+  _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+}
+[[1m[38;2;99;143;79m7805 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] #[1m[38;2;86;156;214m1[39m[22m: https://mobile.events.data.microsoft.com/OneCollector/[1m[38;2;86;156;214m1.0[39m[22m?cors=********&content-type=application/x-json-stream - end POST [1m[38;2;86;156;214m200[39m[22m {
+  'content-length': '[1m[38;2;86;156;214m9[39m[22m',
+  'content-type': 'application/json',
+  server: 'Microsoft-HTTPAPI/[1m[38;2;86;156;214m2.0[39m[22m',
+  'strict-transport-security': 'max-age=[1m[38;2;86;156;214m31536000[39m[22m',
+  'time-delta-millis': '[1m[38;2;86;156;214m554[39m[22m',
+  'access-control-allow-headers': 'time-delta-millis',
+  'access-control-allow-methods': 'POST',
+  'access-control-allow-credentials': '********',
+  'access-control-allow-origin': '*',
+  'access-control-expose-headers': 'time-delta-millis',
+  date: 'Wed, [1m[38;2;86;156;214m06[39m[22m May [1m[38;2;86;156;214m2026[39m[22m [1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m GMT'
+}
+[[1m[38;2;99;143;79m7815 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] #[1m[38;2;86;156;214m2[39m[22m: https://main.vscode-cdn.net/extensions/marketplace.json - end GET [1m[38;2;86;156;214m200[39m[22m {
+  date: 'Wed, [1m[38;2;86;156;214m06[39m[22m May [1m[38;2;86;156;214m2026[39m[22m [1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m GMT',
+  'content-type': 'application/json',
+  'content-length': '[1m[38;2;86;156;214m68955[39m[22m',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=[1m[38;2;86;156;214m3600[39m[22m',
+  'last-modified': 'Wed, [1m[38;2;86;156;214m06[39m[22m May [1m[38;2;86;156;214m2026[39m[22m [1m[38;2;86;156;214m08[39m[22m:[1m[38;2;86;156;214m24[39m[22m:[1m[38;2;86;156;214m42[39m[22m GMT',
+  etag: '"0x8DEAB48EC287672"',
+  'x-ms-request-id': '751ab7cd-a01e-0053-0637-dd79ef000000',
+  'x-ms-version': '2018-03-28',
+  'x-azure-ref': '20260506T160049Z-17b4fd565d5mg7tthC1LAS4r7s0000000z700000000032p4',
+  'x-fd-int-roxy-purgeid': '[1m[38;2;86;156;214m3[39m[22m',
+  'x-cache': 'TCP_HIT',
+  vary: 'Origin',
+  'cross-origin-resource-policy': 'cross-origin',
+  'accept-ranges': 'bytes'
+}
+[[1m[38;2;99;143;79m7829 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] ComputeTargetPlatform: linux-x64
+[[1m[38;2;99;143;79m7832 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] Scanned user extensions: [1m[38;2;86;156;214m6[39m[22m
+[[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] Scanned user extensions: [1m[38;2;86;156;214m6[39m[22m
+[[1m[38;2;99;143;79m7880 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] AbstractMcpResourceManagementService#populateLocalServers file:///home/codespace/.vscode-remote/data/User/mcp.json
+[[1m[38;2;99;143;79m7883 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m00[39m[22m:[1m[38;2;86;156;214m49[39m[22m] Log level changed to info
+[[1m[38;2;99;143;79m27 ms[39m[22m] @microsoft/vscode-dev-containers-cli 0.95.0.
+[1m[38;2;99;143;79m[24 ms] Start[39m[22m: Resolving Remote for VSC start
+[1m[38;2;99;143;79m[29 ms] Start[39m[22m: Run: docker ps -q -a --filter label=Type=codespaces
+[1m[38;2;143;99;79m[67 ms] Stop[39m[22m (38 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[1m[38;2;99;143;79m[68 ms] Start[39m[22m: Run: docker inspect --type container 72fd548946c9
+[1m[38;2;143;99;79m[97 ms] Stop[39m[22m (29 ms): Run: docker inspect --type container 72fd548946c9
+[1m[38;2;99;143;79m[101 ms] Start[39m[22m: Inspecting container
+[1m[38;2;143;99;79m[101 ms] Stop[39m[22m (0 ms): Inspecting container
+[1m[38;2;99;143;79m[104 ms] Start[39m[22m: Run in container: /bin/sh
+[1m[38;2;99;143;79m[109 ms] Start[39m[22m: Run in container: uname -m
+[[1m[38;2;99;143;79m187 ms[39m[22m] x86_64
+[[1m[38;2;99;143;79m188 ms[39m[22m] 
+[1m[38;2;143;99;79m[188 ms] Stop[39m[22m (79 ms): Run in container: uname -m
+[1m[38;2;99;143;79m[188 ms] Start[39m[22m: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) [1m[38;2;86;156;214m2[39m[22m>/dev/null
+[[1m[38;2;99;143;79m194 ms[39m[22m] PRETTY_NAME="Ubuntu [1m[38;2;86;156;214m24.04.4[39m[22m LTS"
+NAME="Ubuntu"
+VERSION_ID="[1m[38;2;86;156;214m24.04[39m[22m"
+VERSION="[1m[38;2;86;156;214m24.04.4[39m[22m LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+[[1m[38;2;99;143;79m194 ms[39m[22m] 
+[1m[38;2;143;99;79m[194 ms] Stop[39m[22m (6 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) [1m[38;2;86;156;214m2[39m[22m>/dev/null
+[1m[38;2;99;143;79m[194 ms] Start[39m[22m: Run in container:  (command -v getent >/dev/null [1m[38;2;86;156;214m2[39m[22m>&[1m[38;2;86;156;214m1[39m[22m && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[1m[38;2;143;99;79m[201 ms] Stop[39m[22m (7 ms): Run in container:  (command -v getent >/dev/null [1m[38;2;86;156;214m2[39m[22m>&[1m[38;2;86;156;214m1[39m[22m && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[1m[38;2;99;143;79m[202 ms] Start[39m[22m: Run in container: test -d '/home/codespace/.vscode-remote'
+[[1m[38;2;99;143;79m206 ms[39m[22m] 
+[[1m[38;2;99;143;79m209 ms[39m[22m] 
+[1m[38;2;143;99;79m[209 ms] Stop[39m[22m (7 ms): Run in container: test -d '/home/codespace/.vscode-remote'
+[1m[38;2;99;143;79m[210 ms] Start[39m[22m: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[[1m[38;2;99;143;79m211 ms[39m[22m] 
+[[1m[38;2;99;143;79m211 ms[39m[22m] 
+[[1m[38;2;99;143;79m211 ms[39m[22m] Exit code [1m[38;2;86;156;214m1[39m[22m
+[1m[38;2;143;99;79m[211 ms] Stop[39m[22m (1 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[1m[38;2;99;143;79m[212 ms] Start[39m[22m: Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[[1m[38;2;99;143;79m214 ms[39m[22m] {
+	"go.toolsManagement.checkForUpdates": "local",
+	"go.useLanguageServer": ********,
+	"go.gopath": "/go",
+	"python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python3",
+	"jupyter.kernels.filter": [
+		{
+			"path": "/opt/conda/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python3",
+			"type": "pythonEnvironment"
+		}
+	],
+	"lldb.executable": "/usr/bin/lldb",
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "This workspace is in a dev container running on \"Ubuntu [1m[38;2;86;156;214m24.04.4[39m[22m LTS\".\n\nUse `\"$BROWSER\" <url>` to open a webpage in the host's default browser.\n\nSome of the command line tools available on the `PATH`: `apt`, `dpkg`, `docker`, `git`, `gh`, `kubectl`, `curl`, `wget`, `ssh`, `scp`, `rsync`, `gpg`, `ps`, `lsof`, `netstat`, `top`, `tree`, `find`, `grep`, `zip`, `unzip`, `tar`, `gzip`, `bzip2`, `xz`"
+		}
+	]
+}
+[[1m[38;2;99;143;79m215 ms[39m[22m] 
+[1m[38;2;143;99;79m[215 ms] Stop[39m[22m (3 ms): Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[1m[38;2;99;143;79m[217 ms] Start[39m[22m: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[[1m[38;2;99;143;79m218 ms[39m[22m] 
+[[1m[38;2;99;143;79m218 ms[39m[22m] 
+[[1m[38;2;99;143;79m218 ms[39m[22m] Exit code [1m[38;2;86;156;214m1[39m[22m
+[1m[38;2;143;99;79m[218 ms] Stop[39m[22m (1 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[1m[38;2;99;143;79m[219 ms] Start[39m[22m: Run in container: test -d '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m221 ms[39m[22m] 
+[[1m[38;2;99;143;79m221 ms[39m[22m] 
+[1m[38;2;143;99;79m[221 ms] Stop[39m[22m (2 ms): Run in container: test -d '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[1m[38;2;99;143;79m[221 ms] Start[39m[22m: Run in container: test -d '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m222 ms[39m[22m] 
+[[1m[38;2;99;143;79m222 ms[39m[22m] 
+[1m[38;2;143;99;79m[222 ms] Stop[39m[22m (1 ms): Run in container: test -d '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[1m[38;2;99;143;79m[222 ms] Start[39m[22m: Run in container: /bin/sh
+[1m[38;2;99;143;79m[231 ms] Start[39m[22m: Run in container: test -x '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[1m[38;2;99;143;79m[231 ms] Start[39m[22m: Run in container: touch '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m234 ms[39m[22m] 
+[[1m[38;2;99;143;79m234 ms[39m[22m] 
+[1m[38;2;143;99;79m[234 ms] Stop[39m[22m (3 ms): Run in container: test -x '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[1m[38;2;99;143;79m[234 ms] Start[39m[22m: Run in container: '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[[1m[38;2;99;143;79m394 ms[39m[22m] 
+[[1m[38;2;99;143;79m395 ms[39m[22m] 
+[1m[38;2;143;99;79m[395 ms] Stop[39m[22m (164 ms): Run in container: touch '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m588 ms[39m[22m] 
+[[1m[38;2;99;143;79m589 ms[39m[22m] 
+[1m[38;2;143;99;79m[589 ms] Stop[39m[22m (355 ms): Run in container: '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[[1m[38;2;99;143;79m589 ms[39m[22m] userEnvProbe: loginInteractiveShell (default)
+[1m[38;2;99;143;79m[591 ms] Start[39m[22m: Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[[1m[38;2;99;143;79m595 ms[39m[22m] 
+[[1m[38;2;99;143;79m596 ms[39m[22m] 
+[1m[38;2;143;99;79m[596 ms] Stop[39m[22m (5 ms): Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[1m[38;2;99;143;79m[601 ms] Start[39m[22m: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[1m[38;2;143;99;79m[1299 ms] Stop[39m[22m (698 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[1m[38;2;99;143;79m[1300 ms] Start[39m[22m: Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[[1m[38;2;99;143;79m1311 ms[39m[22m] {}
+[[1m[38;2;99;143;79m1312 ms[39m[22m] 
+[1m[38;2;143;99;79m[1312 ms] Stop[39m[22m (12 ms): Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[1m[38;2;99;143;79m[1312 ms] Start[39m[22m: Run in container: cat '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/product.json'
+[1m[38;2;143;99;79m[1328 ms] Stop[39m[22m (16 ms): Run in container: cat '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/product.json'
+[[1m[38;2;99;143;79m1332 ms[39m[22m] Running extension host agents:
+[
+  {
+    "pid": "[1m[38;2;86;156;214m563[39m[22m",
+    "ppid": "[1m[38;2;86;156;214m0[39m[22m",
+    "pgrp": "[1m[38;2;86;156;214m563[39m[22m",
+    "cwd": "/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b",
+    "mntNS": "mnt:[[1m[38;2;86;156;214m4026532223[39m[22m]",
+    "cmd": "sh /home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/codespace/.vscode-remote --accept-server-license-terms --host [1m[38;2;86;156;214m127.0.0.1[39m[22m --port [1m[38;2;86;156;214m0[39m[22m --connection-token-file /home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b --extensions-download-dir /home/codespace/.vscode-remote/extensionsCache --start-server  --enable-remote-auto-shutdown --skip-requirements-check ",
+    "env": {
+      "PATH": "/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet",
+      "HOSTNAME": "codespaces-4bd3aa",
+      "CODESPACES": "********",
+      "ContainerVersion": "[1m[38;2;86;156;214m13[39m[22m",
+      "RepositoryName": "dwssr-2026a",
+      "LANG": "C.UTF-8",
+      "SHELL": "/bin/bash",
+      "DOCKER_BUILDKIT": "[1m[38;2;86;156;214m1[39m[22m",
+      "DOTNET_ROOT": "/usr/share/dotnet",
+      "DOTNET_RUNNING_IN_CONTAINER": "********",
+      "DOTNET_USE_POLLING_FILE_WATCHER": "********",
+      "HUGO_DIR": "/usr/local/hugo",
+      "NVM_DIR": "/usr/local/share/nvm",
+      "NVM_SYMLINK_CURRENT": "********",
+      "NVS_DIR": "/usr/local/nvs",
+      "CONDA_DIR": "/opt/conda",
+      "CONDA_SCRIPT": "/opt/conda/etc/profile.d/conda.sh",
+      "PHP_PATH": "/usr/local/php/current",
+      "GEM_PATH": "/usr/local/rvm/gems/default:/usr/local/rvm/gems/default@global",
+      "GEM_HOME": "/usr/local/rvm/gems/default",
+      "MY_RUBY_HOME": "/usr/local/rvm/rubies/default",
+      "SDKMAN_DIR": "/usr/local/sdkman",
+      "JAVA_HOME": "/usr/local/sdkman/candidates/java/current",
+      "GOROOT": "/usr/local/go",
+      "GOPATH": "/go",
+      "ORYX_SDK_STORAGE_BASE_URL": "https://oryx-cdn.microsoft.io",
+      "ENABLE_DYNAMIC_INSTALL": "********",
+      "DYNAMIC_INSTALL_ROOT_DIR": "/opt",
+      "ORYX_PREFER_USER_INSTALLED_SDKS": "********",
+      "ORYX_DIR": "/usr/local/oryx",
+      "DEBIAN_FLAVOR": "bookworm",
+      "PYTHON_PATH": "/usr/local/python/current",
+      "PIPX_HOME": "/usr/local/py-utils",
+      "PIPX_BIN_DIR": "/usr/local/py-utils/bin",
+      "RUBY_HOME": "/usr/local/rvm/rubies/default",
+      "JAVA_ROOT": "/home/codespace/java",
+      "NODE_ROOT": "/home/codespace/nvm",
+      "PHP_ROOT": "/home/codespace/.php",
+      "PYTHON_ROOT": "/home/codespace/.python",
+      "RUBY_ROOT": "/home/codespace/.ruby",
+      "MAVEN_ROOT": "/home/codespace/.maven",
+      "HUGO_ROOT": "/home/codespace/.hugo",
+      "DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "[1m[38;2;86;156;214m1[39m[22m",
+      "NUGET_XMLDOC_MODE": "skip",
+      "ORYX_ENV_TYPE": "vsonline-present",
+      "PYTHONIOENCODING": "UTF-8",
+      "NPM_GLOBAL": "/home/codespace/.npm-global",
+      "NVS_HOME": "/home/codespace/.nvs",
+      "RVM_PATH": "/usr/local/rvm",
+      "RAILS_DEVELOPMENT_HOSTS": ".githubpreview.dev,.preview.********,.********",
+      "JUPYTERLAB_PATH": "/home/codespace/.local/bin",
+      "CLOUDENV_ENVIRONMENT_ID": "0c99d7f8-8723-4042-9a4f-aa6121c3ee75",
+      "CODESPACE_NAME": "********",
+      "GITHUB_SERVER_URL": "********",
+      "GITHUB_API_URL": "********",
+      "GITHUB_GRAPHQL_URL": "********",
+      "GITHUB_REPOSITORY": "********",
+      "INTERNAL_VSCS_TARGET_URL": "********",
+      "GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN": "********",
+      "GITHUB_CODESPACE_TOKEN": "********",
+      "GITHUB_TOKEN": "********",
+      "GITHUB_USER": "********",
+      "FEATURE_SPARK_POST_COMMIT_CREATE_ITERATION": "********",
+      "HOME": "/home/codespace"
+    }
+  }
+]
+[1m[38;2;99;143;79m[1332 ms] Start[39m[22m: Run in container: readlink -f '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m1339 ms[39m[22m] /vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b
+[[1m[38;2;99;143;79m1339 ms[39m[22m] 
+[1m[38;2;143;99;79m[1339 ms] Stop[39m[22m (7 ms): Run in container: readlink -f '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m1341 ms[39m[22m] Extension host agent is already running.
+[1m[38;2;99;143;79m[1341 ms] Start[39m[22m: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.devport-41dd792b5e652393e7787322889ed5fdc58bd75b' [1m[38;2;86;156;214m2[39m[22m>/dev/null
+[[1m[38;2;99;143;79m1358 ms[39m[22m] [1m[38;2;86;156;214m33183[39m[22m
+[[1m[38;2;99;143;79m1358 ms[39m[22m] 
+[1m[38;2;143;99;79m[1358 ms] Stop[39m[22m (17 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.devport-41dd792b5e652393e7787322889ed5fdc58bd75b' [1m[38;2;86;156;214m2[39m[22m>/dev/null
+[1m[38;2;99;143;79m[1358 ms] Start[39m[22m: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m1374 ms[39m[22m] 2a4a86a7-f729-43bf-bc39-07f653de903e
+[[1m[38;2;99;143;79m1374 ms[39m[22m] 
+[1m[38;2;143;99;79m[1374 ms] Stop[39m[22m (16 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b'
+[1m[38;2;143;99;79m[1375 ms] Stop[39m[22m (1351 ms): Resolving Remote for VSC start
+[[1m[38;2;99;143;79m870848 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m12[39m[22m] #[1m[38;2;86;156;214m75[39m[22m: https://mobile.events.data.microsoft.com/OneCollector/[1m[38;2;86;156;214m1.0[39m[22m?cors=********&content-type=application/x-json-stream - error POST read ECONNRESET
+[[1m[38;2;99;143;79m1113820 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m19[39m[22m:[1m[38;2;86;156;214m15[39m[22m] #[1m[38;2;86;156;214m107[39m[22m: https://mobile.events.data.microsoft.com/OneCollector/[1m[38;2;86;156;214m1.0[39m[22m?cors=********&content-type=application/x-json-stream - error POST socket hang up
+[[1m[38;2;99;143;79m2244041 ms[39m[22m] [[1m[38;2;86;156;214m16[39m[22m:[1m[38;2;86;156;214m38[39m[22m:[1m[38;2;86;156;214m05[39m[22m] #[1m[38;2;86;156;214m259[39m[22m: https://mobile.events.data.microsoft.com/OneCollector/[1m[38;2;86;156;214m1.0[39m[22m?cors=********&content-type=application/x-json-stream - error POST read ECONNRESET
+[1m[38;2;143;99;79m[2863012 ms] Stop[39m[22m (2862908 ms): Run in container: /bin/sh
+[1m[38;2;143;99;79m[2888361 ms] Stop[39m[22m (2888271 ms): Run in container: /bin/sh
+[1m[38;2;143;99;79m[2863018 ms] Stop[39m[22m (2862796 ms): Run in container: /bin/sh
+[1m[38;2;143;99;79m[2888417 ms] Stop[39m[22m (2888092 ms): Run in container: /bin/sh
+[1m[38;2;143;99;79m[2888417 ms] Stop[39m[22m (2884192 ms): Run in container: /home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/codespace/.vscode-remote --accept-server-license-terms --host [1m[38;2;86;156;214m127.0.0.1[39m[22m --port [1m[38;2;86;156;214m0[39m[22m --connection-token-file /home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b --extensions-download-dir /home/codespace/.vscode-remote/extensionsCache --start-server  --enable-remote-auto-shutdown --skip-requirements-check
+[[1m[38;2;99;143;79m456 ms[39m[22m] @microsoft/vscode-dev-containers-cli 0.95.0.
+[1m[38;2;99;143;79m[455 ms] Start[39m[22m: Resolving Remote for VSC start
+[1m[38;2;99;143;79m[457 ms] Start[39m[22m: Run: docker ps -q -a --filter label=Type=codespaces
+[1m[38;2;143;99;79m[480 ms] Stop[39m[22m (23 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[1m[38;2;99;143;79m[480 ms] Start[39m[22m: Run: docker inspect --type container 72fd548946c9
+[1m[38;2;143;99;79m[498 ms] Stop[39m[22m (18 ms): Run: docker inspect --type container 72fd548946c9
+[1m[38;2;99;143;79m[499 ms] Start[39m[22m: Inspecting container
+[1m[38;2;143;99;79m[500 ms] Stop[39m[22m (1 ms): Inspecting container
+[1m[38;2;99;143;79m[500 ms] Start[39m[22m: Run in container: /bin/sh
+[1m[38;2;99;143;79m[504 ms] Start[39m[22m: Run in container: uname -m
+[[1m[38;2;99;143;79m605 ms[39m[22m] x86_64
+[[1m[38;2;99;143;79m607 ms[39m[22m] 
+[1m[38;2;143;99;79m[607 ms] Stop[39m[22m (103 ms): Run in container: uname -m
+[1m[38;2;99;143;79m[607 ms] Start[39m[22m: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) [1m[38;2;86;156;214m2[39m[22m>/dev/null
+[[1m[38;2;99;143;79m611 ms[39m[22m] PRETTY_NAME="Ubuntu [1m[38;2;86;156;214m24.04.4[39m[22m LTS"
+NAME="Ubuntu"
+VERSION_ID="[1m[38;2;86;156;214m24.04[39m[22m"
+VERSION="[1m[38;2;86;156;214m24.04.4[39m[22m LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+[[1m[38;2;99;143;79m612 ms[39m[22m] 
+[1m[38;2;143;99;79m[612 ms] Stop[39m[22m (5 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) [1m[38;2;86;156;214m2[39m[22m>/dev/null
+[1m[38;2;99;143;79m[612 ms] Start[39m[22m: Run in container:  (command -v getent >/dev/null [1m[38;2;86;156;214m2[39m[22m>&[1m[38;2;86;156;214m1[39m[22m && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[1m[38;2;143;99;79m[616 ms] Stop[39m[22m (4 ms): Run in container:  (command -v getent >/dev/null [1m[38;2;86;156;214m2[39m[22m>&[1m[38;2;86;156;214m1[39m[22m && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[1m[38;2;99;143;79m[618 ms] Start[39m[22m: Run in container: test -d '/home/codespace/.vscode-remote'
+[[1m[38;2;99;143;79m619 ms[39m[22m] 
+[[1m[38;2;99;143;79m619 ms[39m[22m] 
+[1m[38;2;143;99;79m[619 ms] Stop[39m[22m (1 ms): Run in container: test -d '/home/codespace/.vscode-remote'
+[1m[38;2;99;143;79m[620 ms] Start[39m[22m: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[[1m[38;2;99;143;79m621 ms[39m[22m] 
+[[1m[38;2;99;143;79m621 ms[39m[22m] 
+[[1m[38;2;99;143;79m621 ms[39m[22m] Exit code [1m[38;2;86;156;214m1[39m[22m
+[1m[38;2;143;99;79m[621 ms] Stop[39m[22m (1 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[1m[38;2;99;143;79m[621 ms] Start[39m[22m: Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[[1m[38;2;99;143;79m858 ms[39m[22m] {
+	"go.toolsManagement.checkForUpdates": "local",
+	"go.useLanguageServer": ********,
+	"go.gopath": "/go",
+	"python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python3",
+	"jupyter.kernels.filter": [
+		{
+			"path": "/opt/conda/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python3",
+			"type": "pythonEnvironment"
+		}
+	],
+	"lldb.executable": "/usr/bin/lldb",
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "This workspace is in a dev container running on \"Ubuntu [1m[38;2;86;156;214m24.04.4[39m[22m LTS\".\n\nUse `\"$BROWSER\" <url>` to open a webpage in the host's default browser.\n\nSome of the command line tools available on the `PATH`: `apt`, `dpkg`, `docker`, `git`, `gh`, `kubectl`, `curl`, `wget`, `ssh`, `scp`, `rsync`, `gpg`, `ps`, `lsof`, `netstat`, `top`, `tree`, `find`, `grep`, `zip`, `unzip`, `tar`, `gzip`, `bzip2`, `xz`"
+		}
+	]
+}
+[[1m[38;2;99;143;79m858 ms[39m[22m] 
+[1m[38;2;143;99;79m[858 ms] Stop[39m[22m (237 ms): Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[1m[38;2;99;143;79m[859 ms] Start[39m[22m: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[[1m[38;2;99;143;79m865 ms[39m[22m] 
+[[1m[38;2;99;143;79m865 ms[39m[22m] 
+[[1m[38;2;99;143;79m865 ms[39m[22m] Exit code [1m[38;2;86;156;214m1[39m[22m
+[1m[38;2;143;99;79m[865 ms] Stop[39m[22m (6 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[1m[38;2;99;143;79m[868 ms] Start[39m[22m: Run in container: test -d '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m936 ms[39m[22m] 
+[[1m[38;2;99;143;79m937 ms[39m[22m] 
+[1m[38;2;143;99;79m[937 ms] Stop[39m[22m (69 ms): Run in container: test -d '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[1m[38;2;99;143;79m[937 ms] Start[39m[22m: Run in container: test -d '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m940 ms[39m[22m] 
+[[1m[38;2;99;143;79m941 ms[39m[22m] 
+[1m[38;2;143;99;79m[941 ms] Stop[39m[22m (4 ms): Run in container: test -d '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[1m[38;2;99;143;79m[941 ms] Start[39m[22m: Run in container: /bin/sh
+[1m[38;2;99;143;79m[945 ms] Start[39m[22m: Run in container: test -x '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[1m[38;2;99;143;79m[946 ms] Start[39m[22m: Run in container: touch '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m950 ms[39m[22m] 
+[[1m[38;2;99;143;79m950 ms[39m[22m] 
+[1m[38;2;143;99;79m[950 ms] Stop[39m[22m (5 ms): Run in container: test -x '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[1m[38;2;99;143;79m[950 ms] Start[39m[22m: Run in container: '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[[1m[38;2;99;143;79m1052 ms[39m[22m] 
+[[1m[38;2;99;143;79m1052 ms[39m[22m] 
+[1m[38;2;143;99;79m[1052 ms] Stop[39m[22m (106 ms): Run in container: touch '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m1327 ms[39m[22m] 
+[[1m[38;2;99;143;79m1327 ms[39m[22m] 
+[1m[38;2;143;99;79m[1327 ms] Stop[39m[22m (377 ms): Run in container: '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[[1m[38;2;99;143;79m1328 ms[39m[22m] userEnvProbe: loginInteractiveShell (default)
+[1m[38;2;99;143;79m[1328 ms] Start[39m[22m: Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[[1m[38;2;99;143;79m1330 ms[39m[22m] 
+[[1m[38;2;99;143;79m1330 ms[39m[22m] 
+[1m[38;2;143;99;79m[1330 ms] Stop[39m[22m (2 ms): Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[1m[38;2;99;143;79m[1330 ms] Start[39m[22m: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[1m[38;2;143;99;79m[1482 ms] Stop[39m[22m (152 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[1m[38;2;99;143;79m[1482 ms] Start[39m[22m: Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[[1m[38;2;99;143;79m1486 ms[39m[22m] {}
+[[1m[38;2;99;143;79m1487 ms[39m[22m] 
+[1m[38;2;143;99;79m[1487 ms] Stop[39m[22m (5 ms): Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[1m[38;2;99;143;79m[1487 ms] Start[39m[22m: Run in container: cat '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/product.json'
+[1m[38;2;143;99;79m[1546 ms] Stop[39m[22m (59 ms): Run in container: cat '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/product.json'
+[[1m[38;2;99;143;79m1549 ms[39m[22m] Running extension host agents:
+[]
+[1m[38;2;99;143;79m[1549 ms] Start[39m[22m: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b' [1m[38;2;86;156;214m2[39m[22m>/dev/null || (umask [1m[38;2;86;156;214m377[39m[22m && echo '637d5322-6b29-47e8-aa3f-05839f94847c' >'/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b-30cde019-b032-4dd8-bbc8-ebdfa4c07de2' && mv -n '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b-30cde019-b032-4dd8-bbc8-ebdfa4c07de2' '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b' && rm -f '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b-30cde019-b032-4dd8-bbc8-ebdfa4c07de2' && cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b')
+[[1m[38;2;99;143;79m1552 ms[39m[22m] 2a4a86a7-f729-43bf-bc39-07f653de903e
+[[1m[38;2;99;143;79m1553 ms[39m[22m] 
+[1m[38;2;143;99;79m[1553 ms] Stop[39m[22m (4 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b' [1m[38;2;86;156;214m2[39m[22m>/dev/null || (umask [1m[38;2;86;156;214m377[39m[22m && echo '637d5322-6b29-47e8-aa3f-05839f94847c' >'/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b-30cde019-b032-4dd8-bbc8-ebdfa4c07de2' && mv -n '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b-30cde019-b032-4dd8-bbc8-ebdfa4c07de2' '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b' && rm -f '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b-30cde019-b032-4dd8-bbc8-ebdfa4c07de2' && cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b')
+[1m[38;2;99;143;79m[1553 ms] Start[39m[22m: Starting VS Code Server
+[1m[38;2;99;143;79m[1553 ms] Start[39m[22m: Preparing Extensions
+[1m[38;2;99;143;79m[1553 ms] Start[39m[22m: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[[1m[38;2;99;143;79m1555 ms[39m[22m] 
+[[1m[38;2;99;143;79m1555 ms[39m[22m] 
+[[1m[38;2;99;143;79m1555 ms[39m[22m] Exit code [1m[38;2;86;156;214m1[39m[22m
+[1m[38;2;143;99;79m[1555 ms] Stop[39m[22m (2 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[1m[38;2;99;143;79m[1556 ms] Start[39m[22m: Run in container: mkdir -p '/vscode/extensionsCache' && chown -R codespace /vscode/extensionsCache
+[[1m[38;2;99;143;79m1562 ms[39m[22m] 
+[[1m[38;2;99;143;79m1562 ms[39m[22m] 
+[1m[38;2;143;99;79m[1562 ms] Stop[39m[22m (6 ms): Run in container: mkdir -p '/vscode/extensionsCache' && chown -R codespace /vscode/extensionsCache
+[1m[38;2;99;143;79m[1562 ms] Start[39m[22m: Run in container: mkdir -p '/vscode/extensionsCache' && ln -s -T '/vscode/extensionsCache' '/home/codespace/.vscode-remote/extensionsCache' || ********
+[[1m[38;2;99;143;79m1570 ms[39m[22m] 
+[[1m[38;2;99;143;79m1570 ms[39m[22m] ln: failed to create symbolic link '/home/codespace/.vscode-remote/extensionsCache': File exists
+[1m[38;2;143;99;79m[1570 ms] Stop[39m[22m (8 ms): Run in container: mkdir -p '/vscode/extensionsCache' && ln -s -T '/vscode/extensionsCache' '/home/codespace/.vscode-remote/extensionsCache' || ********
+[1m[38;2;143;99;79m[1570 ms] Stop[39m[22m (17 ms): Preparing Extensions
+[1m[38;2;99;143;79m[1571 ms] Start[39m[22m: Run in container: /home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/codespace/.vscode-remote --accept-server-license-terms --host [1m[38;2;86;156;214m127.0.0.1[39m[22m --port [1m[38;2;86;156;214m0[39m[22m --connection-token-file /home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b --extensions-download-dir /home/codespace/.vscode-remote/extensionsCache --start-server  --enable-remote-auto-shutdown --skip-requirements-check
+[[1m[38;2;99;143;79m2582 ms[39m[22m] *
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+[[1m[38;2;99;143;79m2591 ms[39m[22m] Server bound to [1m[38;2;86;156;214m127.0.0.1[39m[22m:[1m[38;2;86;156;214m32799[39m[22m (IPv4)
+Extension host agent listening on [1m[38;2;86;156;214m32799[39m[22m
+
+[1m[38;2;143;99;79m[2594 ms] Stop[39m[22m (1041 ms): Starting VS Code Server
+[1m[38;2;99;143;79m[2594 ms] Start[39m[22m: Run in container: echo [1m[38;2;86;156;214m32799[39m[22m >'/home/codespace/.vscode-remote/data/Machine/.devport-41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m2600 ms[39m[22m] 
+[[1m[38;2;99;143;79m2600 ms[39m[22m] 
+[1m[38;2;143;99;79m[2600 ms] Stop[39m[22m (6 ms): Run in container: echo [1m[38;2;86;156;214m32799[39m[22m >'/home/codespace/.vscode-remote/data/Machine/.devport-41dd792b5e652393e7787322889ed5fdc58bd75b'
+[1m[38;2;143;99;79m[2600 ms] Stop[39m[22m (2145 ms): Resolving Remote for VSC start
+[[1m[38;2;99;143;79m2709 ms[39m[22m] Ignoring option 'skip-requirements-check': not supported for server.
+[[1m[38;2;99;143;79m2722 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] Remote configuration data at /home/codespace/.vscode-remote
+[[1m[38;2;99;143;79m2731 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] process arguments: {
+  _: [],
+  host: '[1m[38;2;86;156;214m127.0.0.1[39m[22m',
+  port: '[1m[38;2;86;156;214m0[39m[22m',
+  'connection-token-file': '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b',
+  'without-connection-token': false,
+  'disable-websocket-compression': false,
+  'print-startup-performance': false,
+  'print-ip-address': false,
+  'accept-server-license-terms': ********,
+  'server-data-dir': '/home/codespace/.vscode-remote',
+  'enable-smoke-test-driver': false,
+  'disable-telemetry': false,
+  'disable-experiments': false,
+  'disable-workspace-trust': false,
+  log: [ 'trace' ],
+  'force-disable-user-env': ********,
+  'enable-sync': false,
+  'use-test-resolver': false,
+  'extensions-download-dir': '/home/codespace/.vscode-remote/extensionsCache',
+  'update-extensions': false,
+  'list-extensions': false,
+  'show-versions': false,
+  force: false,
+  'do-not-sync': false,
+  'do-not-include-pack-dependencies': false,
+  'pre-release': false,
+  'start-server': ********,
+  'enable-remote-auto-shutdown': ********,
+  'remote-auto-shutdown-without-delay': false,
+  'use-host-proxy': false,
+  'without-browser-env-var': false,
+  help: false,
+  version: false,
+  'user-data-dir': '/home/codespace/.vscode-remote/data',
+  'builtin-extensions-dir': '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b/extensions',
+  'extensions-dir': '/home/codespace/.vscode-remote/extensions',
+  logsPath: '/home/codespace/.vscode-remote/data/logs/20260508T151335'
+}
+[[1m[38;2;99;143;79m2731 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] 
+
+
+
+
+[[1m[38;2;99;143;79m2913 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] [File Watcher (node.js)] Request to start watching: /home/codespace/.vscode-remote/data/Machine (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>),/home/codespace/.vscode-remote/data/Machine/settings.json (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[[1m[38;2;99;143;79m2924 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/data/Machine'
+[[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/data/Machine/settings.json'
+[[1m[38;2;99;143;79m2932 ms[39m[22m] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[[1m[38;2;99;143;79m2935 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] ServerLifetime: scheduling shutdown timer
+[[1m[38;2;99;143;79m2938 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] ExtensionManagementService#cleanUp
+[[1m[38;2;99;143;79m2938 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] ExtensionManagementService#removeTempDeleteFolders
+[[1m[38;2;99;143;79m2941 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] Extension host agent started.
+[[1m[38;2;99;143;79m3068 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] [File Watcher (node.js)] Request to start watching: /home/codespace/.vscode-remote/extensions (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[[1m[38;2;99;143;79m3070 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] No extensions are marked as removed.
+[[1m[38;2;99;143;79m3079 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/vscjava.vscode-java-pack-0.30.2025111702
+[[1m[38;2;99;143;79m3080 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/esbenp.prettier-vscode-12.4.0
+[[1m[38;2;99;143;79m3082 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/vscjava.vscode-java-debug-0.59.2026042907
+[[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/ms-azuretools.vscode-docker-2.0.0
+[[1m[38;2;99;143;79m3083 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/extensions'
+[[1m[38;2;99;143;79m3088 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] [File Watcher (node.js)] Request to start watching: /home/codespace/.vscode-remote/extensions/extensions.json (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[[1m[38;2;99;143;79m3175 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m35[39m[22m] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/extensions/extensions.json'
+[[1m[38;2;99;143;79m3509 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][6882fc77][ManagementConnection] New connection established.
+[[1m[38;2;99;143;79m3575 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][8c714f18][ExtensionHostConnection] - startParams language: es
+[[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][8c714f18][ExtensionHostConnection] - startParams env: {}
+[[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][8c714f18][ExtensionHostConnection] New connection established.
+[[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] ServerLifetime: consumer 'ExtensionHost:8c714f18' active (total: [1m[38;2;86;156;214m1[39m[22m)
+[[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] ServerLifetime: cancelling shutdown timer
+[[1m[38;2;99;143;79m3579 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] resolveShellEnv(): skipped (--force-disable-user-env)
+[[1m[38;2;99;143;79m3580 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] [reconnection-grace-time] Setting VSCODE_RECONNECTION_GRACE_TIME env var for extension host: 10800000ms (10800s)
+[[1m[38;2;99;143;79m3593 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][8c714f18][ExtensionHostConnection] <[1m[38;2;86;156;214m565[39m[22m> Launched Extension Host Process.
+[[1m[38;2;99;143;79m3766 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] [reconnection-grace-time] Server sending grace time to client: 10800000ms (10800s)
+[[1m[38;2;99;143;79m3769 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] ExtensionManagementService.updateControlCache
+[[1m[38;2;99;143;79m3771 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] Started scanning system extensions
+[[1m[38;2;99;143;79m3781 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] Started scanning user extensions Fs {
+  scheme: 'file',
+  authority: '',
+  path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+  query: '',
+  fragment: '',
+  _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+  _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+}
+[[1m[38;2;99;143;79m3782 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] Started scanning user extensions Fs {
+  scheme: 'file',
+  authority: '',
+  path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+  query: '',
+  fragment: '',
+  _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+  _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+}
+[[1m[38;2;99;143;79m3784 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] Scanning extensions using UI language: es
+[[1m[38;2;99;143;79m3796 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] resolveShellEnv(): skipped (--force-disable-user-env)
+[[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] #[1m[38;2;86;156;214m1[39m[22m: https://main.vscode-cdn.net/extensions/marketplace.json - begin GET WS { original: {}, headers: [Object: null prototype] {} }
+[[1m[38;2;99;143;79m3843 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] Writing language packs {"es":{"hash":"60d72bcaa61761ae43596e25526daed0","extensions":[{"extensionIdentifier":{"id":"ms-ceintl.vscode-language-pack-es","uuid":"47e020a1-33db-4cc0-a1b4-42f97781749a"},"version":"[1m[38;2;86;156;214m1.110.2026050117[39m[22m"}],"translations":{"vscode":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/main.i18n.json","ms-vscode.js-debug":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/ms-vscode.js-debug.i18n.json","vscode.bat":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.bat.i18n.json","vscode.builtin-notebook-renderers":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.builtin-notebook-renderers.i18n.json","vscode.clojure":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.clojure.i18n.json","vscode.coffeescript":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.coffeescript.i18n.json","vscode.configuration-editing":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.configuration-editing.i18n.json","vscode.cpp":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.cpp.i18n.json","vscode.csharp":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.csharp.i18n.json","vscode.css-language-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.css-language-features.i18n.json","vscode.css":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.css.i18n.json","vscode.dart":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.dart.i18n.json","vscode.debug-auto-launch":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.debug-auto-launch.i18n.json","vscode.debug-server-ready":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.debug-server-ready.i18n.json","vscode.diff":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.diff.i18n.json","vscode.docker":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.docker.i18n.json","vscode.dotenv":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.dotenv.i18n.json","vscode.emmet":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.emmet.i18n.json","vscode.extension-editing":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.extension-editing.i18n.json","vscode.fsharp":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.fsharp.i18n.json","vscode.git-base":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.git-base.i18n.json","vscode.git":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.git.i18n.json","vscode.github-authentication":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.github-authentication.i18n.json","vscode.github":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.github.i18n.json","vscode.go":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.go.i18n.json","vscode.groovy":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.groovy.i18n.json","vscode.grunt":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.grunt.i18n.json","vscode.gulp":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.gulp.i18n.json","vscode.handlebars":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.handlebars.i18n.json","vscode.hlsl":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.hlsl.i18n.json","vscode.html-language-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.html-language-features.i18n.json","vscode.html":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.html.i18n.json","vscode.ini":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.ini.i18n.json","vscode.ipynb":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.ipynb.i18n.json","vscode.jake":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.jake.i18n.json","vscode.java":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.java.i18n.json","vscode.javascript":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.javascript.i18n.json","vscode.json-language-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.json-language-features.i18n.json","vscode.json":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.json.i18n.json","vscode.julia":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.julia.i18n.json","vscode.latex":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.latex.i18n.json","vscode.less":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.less.i18n.json","vscode.log":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.log.i18n.json","vscode.lua":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.lua.i18n.json","vscode.make":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.make.i18n.json","vscode.markdown-language-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.markdown-language-features.i18n.json","vscode.markdown-math":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.markdown-math.i18n.json","vscode.markdown":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.markdown.i18n.json","vscode.media-preview":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.media-preview.i18n.json","vscode.merge-conflict":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.merge-conflict.i18n.json","vscode.mermaid-chat-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.mermaid-chat-features.i18n.json","vscode.microsoft-authentication":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.microsoft-authentication.i18n.json","vscode.npm":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.npm.i18n.json","vscode.objective-c":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.objective-c.i18n.json","vscode.perl":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.perl.i18n.json","vscode.php-language-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.php-language-features.i18n.json","vscode.php":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.php.i18n.json","vscode.powershell":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.powershell.i18n.json","vscode.prompt":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.prompt.i18n.json","vscode.pug":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.pug.i18n.json","vscode.python":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.python.i18n.json","vscode.r":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.r.i18n.json","vscode.razor":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.razor.i18n.json","vscode.references-view":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.references-view.i18n.json","vscode.restructuredtext":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.restructuredtext.i18n.json","vscode.ruby":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.ruby.i18n.json","vscode.rust":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.rust.i18n.json","vscode.scss":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.scss.i18n.json","vscode.search-result":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.search-result.i18n.json","vscode.shaderlab":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.shaderlab.i18n.json","vscode.shellscript":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.shellscript.i18n.json","vscode.simple-browser":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.simple-browser.i18n.json","vscode.sql":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.sql.i18n.json","vscode.swift":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.swift.i18n.json","vscode.terminal-suggest":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.terminal-suggest.i18n.json","vscode.theme-2026":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-2026.i18n.json","vscode.theme-abyss":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-abyss.i18n.json","vscode.theme-defaults":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-defaults.i18n.json","vscode.theme-kimbie-dark":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-kimbie-dark.i18n.json","vscode.theme-monokai-dimmed":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-monokai-dimmed.i18n.json","vscode.theme-monokai":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-monokai.i18n.json","vscode.theme-quietlight":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-quietlight.i18n.json","vscode.theme-red":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-red.i18n.json","vscode.theme-solarized-dark":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-solarized-dark.i18n.json","vscode.theme-solarized-light":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-solarized-light.i18n.json","vscode.theme-tomorrow-night-blue":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.theme-tomorrow-night-blue.i18n.json","vscode.tunnel-forwarding":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.tunnel-forwarding.i18n.json","vscode.typescript-language-features":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.typescript-language-features.i18n.json","vscode.typescript":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.typescript.i18n.json","vscode.vb":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.vb.i18n.json","vscode.vscode-theme-seti":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.vscode-theme-seti.i18n.json","vscode.xml":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.xml.i18n.json","vscode.yaml":"/home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-es-1.110.2026050117/translations/extensions/vscode.yaml.i18n.json"},"label":"español"}}
+[[1m[38;2;99;143;79m3959 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] AbstractMcpResourceManagementService#populateLocalServers file:///home/codespace/.vscode-remote/data/User/mcp.json
+[[1m[38;2;99;143;79m3982 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m36[39m[22m] Log level changed to info
+[[1m[38;2;99;143;79m4396 ms[39m[22m] [[1m[38;2;86;156;214m15[39m[22m:[1m[38;2;86;156;214m13[39m[22m:[1m[38;2;86;156;214m37[39m[22m] [[1m[38;2;86;156;214m127.0.0.1[39m[22m][8c714f18][ExtensionHostConnection] <[1m[38;2;86;156;214m565[39m[22m> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+[[1m[38;2;99;143;79m11 ms[39m[22m] @microsoft/vscode-dev-containers-cli 0.95.0.
+[1m[38;2;99;143;79m[11 ms] Start[39m[22m: Resolving Remote for VSC start
+[1m[38;2;99;143;79m[12 ms] Start[39m[22m: Run: docker ps -q -a --filter label=Type=codespaces
+[1m[38;2;143;99;79m[42 ms] Stop[39m[22m (30 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[1m[38;2;99;143;79m[43 ms] Start[39m[22m: Run: docker inspect --type container 72fd548946c9
+[1m[38;2;143;99;79m[72 ms] Stop[39m[22m (29 ms): Run: docker inspect --type container 72fd548946c9
+[1m[38;2;99;143;79m[74 ms] Start[39m[22m: Inspecting container
+[1m[38;2;143;99;79m[74 ms] Stop[39m[22m (0 ms): Inspecting container
+[1m[38;2;99;143;79m[75 ms] Start[39m[22m: Run in container: /bin/sh
+[1m[38;2;99;143;79m[79 ms] Start[39m[22m: Run in container: uname -m
+[[1m[38;2;99;143;79m136 ms[39m[22m] x86_64
+[[1m[38;2;99;143;79m137 ms[39m[22m] 
+[1m[38;2;143;99;79m[137 ms] Stop[39m[22m (58 ms): Run in container: uname -m
+[1m[38;2;99;143;79m[137 ms] Start[39m[22m: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) [1m[38;2;86;156;214m2[39m[22m>/dev/null
+[[1m[38;2;99;143;79m141 ms[39m[22m] PRETTY_NAME="Ubuntu [1m[38;2;86;156;214m24.04.4[39m[22m LTS"
+NAME="Ubuntu"
+VERSION_ID="[1m[38;2;86;156;214m24.04[39m[22m"
+VERSION="[1m[38;2;86;156;214m24.04.4[39m[22m LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+[[1m[38;2;99;143;79m141 ms[39m[22m] 
+[1m[38;2;143;99;79m[141 ms] Stop[39m[22m (4 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) [1m[38;2;86;156;214m2[39m[22m>/dev/null
+[1m[38;2;99;143;79m[142 ms] Start[39m[22m: Run in container:  (command -v getent >/dev/null [1m[38;2;86;156;214m2[39m[22m>&[1m[38;2;86;156;214m1[39m[22m && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[1m[38;2;143;99;79m[146 ms] Stop[39m[22m (4 ms): Run in container:  (command -v getent >/dev/null [1m[38;2;86;156;214m2[39m[22m>&[1m[38;2;86;156;214m1[39m[22m && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[1m[38;2;99;143;79m[150 ms] Start[39m[22m: Run in container: test -d '/home/codespace/.vscode-remote'
+[[1m[38;2;99;143;79m153 ms[39m[22m] 
+[[1m[38;2;99;143;79m153 ms[39m[22m] 
+[1m[38;2;143;99;79m[153 ms] Stop[39m[22m (3 ms): Run in container: test -d '/home/codespace/.vscode-remote'
+[1m[38;2;99;143;79m[153 ms] Start[39m[22m: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[[1m[38;2;99;143;79m156 ms[39m[22m] 
+[[1m[38;2;99;143;79m156 ms[39m[22m] 
+[[1m[38;2;99;143;79m156 ms[39m[22m] Exit code [1m[38;2;86;156;214m1[39m[22m
+[1m[38;2;143;99;79m[157 ms] Stop[39m[22m (4 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[1m[38;2;99;143;79m[157 ms] Start[39m[22m: Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[[1m[38;2;99;143;79m163 ms[39m[22m] {
+	"go.toolsManagement.checkForUpdates": "local",
+	"go.useLanguageServer": ********,
+	"go.gopath": "/go",
+	"python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python3",
+	"jupyter.kernels.filter": [
+		{
+			"path": "/opt/conda/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python3",
+			"type": "pythonEnvironment"
+		}
+	],
+	"lldb.executable": "/usr/bin/lldb",
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "This workspace is in a dev container running on \"Ubuntu [1m[38;2;86;156;214m24.04.4[39m[22m LTS\".\n\nUse `\"$BROWSER\" <url>` to open a webpage in the host's default browser.\n\nSome of the command line tools available on the `PATH`: `apt`, `dpkg`, `docker`, `git`, `gh`, `kubectl`, `curl`, `wget`, `ssh`, `scp`, `rsync`, `gpg`, `ps`, `lsof`, `netstat`, `top`, `tree`, `find`, `grep`, `zip`, `unzip`, `tar`, `gzip`, `bzip2`, `xz`"
+		}
+	]
+}
+[[1m[38;2;99;143;79m163 ms[39m[22m] 
+[1m[38;2;143;99;79m[163 ms] Stop[39m[22m (6 ms): Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[1m[38;2;99;143;79m[164 ms] Start[39m[22m: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[[1m[38;2;99;143;79m166 ms[39m[22m] 
+[[1m[38;2;99;143;79m167 ms[39m[22m] 
+[[1m[38;2;99;143;79m167 ms[39m[22m] Exit code [1m[38;2;86;156;214m1[39m[22m
+[1m[38;2;143;99;79m[167 ms] Stop[39m[22m (3 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } [1m[38;2;86;156;214m2[39m[22m> /dev/null
+[1m[38;2;99;143;79m[167 ms] Start[39m[22m: Run in container: test -d '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m169 ms[39m[22m] 
+[[1m[38;2;99;143;79m169 ms[39m[22m] 
+[1m[38;2;143;99;79m[169 ms] Stop[39m[22m (2 ms): Run in container: test -d '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[1m[38;2;99;143;79m[169 ms] Start[39m[22m: Run in container: test -d '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m171 ms[39m[22m] 
+[[1m[38;2;99;143;79m171 ms[39m[22m] 
+[1m[38;2;143;99;79m[171 ms] Stop[39m[22m (2 ms): Run in container: test -d '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[1m[38;2;99;143;79m[171 ms] Start[39m[22m: Run in container: /bin/sh
+[1m[38;2;99;143;79m[176 ms] Start[39m[22m: Run in container: test -x '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[1m[38;2;99;143;79m[178 ms] Start[39m[22m: Run in container: touch '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m181 ms[39m[22m] 
+[[1m[38;2;99;143;79m181 ms[39m[22m] 
+[1m[38;2;143;99;79m[181 ms] Stop[39m[22m (5 ms): Run in container: test -x '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[1m[38;2;99;143;79m[181 ms] Start[39m[22m: Run in container: '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[[1m[38;2;99;143;79m318 ms[39m[22m] 
+[[1m[38;2;99;143;79m320 ms[39m[22m] 
+[1m[38;2;143;99;79m[320 ms] Stop[39m[22m (142 ms): Run in container: touch '/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m551 ms[39m[22m] 
+[[1m[38;2;99;143;79m551 ms[39m[22m] 
+[1m[38;2;143;99;79m[551 ms] Stop[39m[22m (370 ms): Run in container: '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/helpers/check-requirements.sh'
+[[1m[38;2;99;143;79m555 ms[39m[22m] userEnvProbe: loginInteractiveShell (default)
+[1m[38;2;99;143;79m[558 ms] Start[39m[22m: Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[[1m[38;2;99;143;79m564 ms[39m[22m] 
+[[1m[38;2;99;143;79m568 ms[39m[22m] 
+[1m[38;2;143;99;79m[568 ms] Stop[39m[22m (10 ms): Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[1m[38;2;99;143;79m[568 ms] Start[39m[22m: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[1m[38;2;143;99;79m[1463 ms] Stop[39m[22m (895 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[1m[38;2;99;143;79m[1464 ms] Start[39m[22m: Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[[1m[38;2;99;143;79m1476 ms[39m[22m] {}
+[[1m[38;2;99;143;79m1476 ms[39m[22m] 
+[1m[38;2;143;99;79m[1476 ms] Stop[39m[22m (12 ms): Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[1m[38;2;99;143;79m[1476 ms] Start[39m[22m: Run in container: cat '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/product.json'
+[1m[38;2;143;99;79m[1486 ms] Stop[39m[22m (10 ms): Run in container: cat '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/product.json'
+[[1m[38;2;99;143;79m1489 ms[39m[22m] Running extension host agents:
+[
+  {
+    "pid": "[1m[38;2;86;156;214m532[39m[22m",
+    "ppid": "[1m[38;2;86;156;214m0[39m[22m",
+    "pgrp": "[1m[38;2;86;156;214m532[39m[22m",
+    "cwd": "/vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b",
+    "mntNS": "mnt:[[1m[38;2;86;156;214m4026532223[39m[22m]",
+    "cmd": "sh /home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/codespace/.vscode-remote --accept-server-license-terms --host [1m[38;2;86;156;214m127.0.0.1[39m[22m --port [1m[38;2;86;156;214m0[39m[22m --connection-token-file /home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b --extensions-download-dir /home/codespace/.vscode-remote/extensionsCache --start-server  --enable-remote-auto-shutdown --skip-requirements-check ",
+    "env": {
+      "PATH": "/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet",
+      "HOSTNAME": "codespaces-4bd3aa",
+      "CODESPACES": "********",
+      "ContainerVersion": "[1m[38;2;86;156;214m13[39m[22m",
+      "RepositoryName": "dwssr-2026a",
+      "LANG": "C.UTF-8",
+      "SHELL": "/bin/bash",
+      "DOCKER_BUILDKIT": "[1m[38;2;86;156;214m1[39m[22m",
+      "DOTNET_ROOT": "/usr/share/dotnet",
+      "DOTNET_RUNNING_IN_CONTAINER": "********",
+      "DOTNET_USE_POLLING_FILE_WATCHER": "********",
+      "HUGO_DIR": "/usr/local/hugo",
+      "NVM_DIR": "/usr/local/share/nvm",
+      "NVM_SYMLINK_CURRENT": "********",
+      "NVS_DIR": "/usr/local/nvs",
+      "CONDA_DIR": "/opt/conda",
+      "CONDA_SCRIPT": "/opt/conda/etc/profile.d/conda.sh",
+      "PHP_PATH": "/usr/local/php/current",
+      "GEM_PATH": "/usr/local/rvm/gems/default:/usr/local/rvm/gems/default@global",
+      "GEM_HOME": "/usr/local/rvm/gems/default",
+      "MY_RUBY_HOME": "/usr/local/rvm/rubies/default",
+      "SDKMAN_DIR": "/usr/local/sdkman",
+      "JAVA_HOME": "/usr/local/sdkman/candidates/java/current",
+      "GOROOT": "/usr/local/go",
+      "GOPATH": "/go",
+      "ORYX_SDK_STORAGE_BASE_URL": "https://oryx-cdn.microsoft.io",
+      "ENABLE_DYNAMIC_INSTALL": "********",
+      "DYNAMIC_INSTALL_ROOT_DIR": "/opt",
+      "ORYX_PREFER_USER_INSTALLED_SDKS": "********",
+      "ORYX_DIR": "/usr/local/oryx",
+      "DEBIAN_FLAVOR": "bookworm",
+      "PYTHON_PATH": "/usr/local/python/current",
+      "PIPX_HOME": "/usr/local/py-utils",
+      "PIPX_BIN_DIR": "/usr/local/py-utils/bin",
+      "RUBY_HOME": "/usr/local/rvm/rubies/default",
+      "JAVA_ROOT": "/home/codespace/java",
+      "NODE_ROOT": "/home/codespace/nvm",
+      "PHP_ROOT": "/home/codespace/.php",
+      "PYTHON_ROOT": "/home/codespace/.python",
+      "RUBY_ROOT": "/home/codespace/.ruby",
+      "MAVEN_ROOT": "/home/codespace/.maven",
+      "HUGO_ROOT": "/home/codespace/.hugo",
+      "DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "[1m[38;2;86;156;214m1[39m[22m",
+      "NUGET_XMLDOC_MODE": "skip",
+      "ORYX_ENV_TYPE": "vsonline-present",
+      "PYTHONIOENCODING": "UTF-8",
+      "NPM_GLOBAL": "/home/codespace/.npm-global",
+      "NVS_HOME": "/home/codespace/.nvs",
+      "RVM_PATH": "/usr/local/rvm",
+      "RAILS_DEVELOPMENT_HOSTS": ".githubpreview.dev,.preview.********,.********",
+      "JUPYTERLAB_PATH": "/home/codespace/.local/bin",
+      "CLOUDENV_ENVIRONMENT_ID": "0c99d7f8-8723-4042-9a4f-aa6121c3ee75",
+      "CODESPACE_NAME": "********",
+      "GITHUB_SERVER_URL": "********",
+      "GITHUB_API_URL": "********",
+      "GITHUB_GRAPHQL_URL": "********",
+      "GITHUB_REPOSITORY": "********",
+      "INTERNAL_VSCS_TARGET_URL": "********",
+      "GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN": "********",
+      "GITHUB_CODESPACE_TOKEN": "********",
+      "GITHUB_TOKEN": "********",
+      "GITHUB_USER": "********",
+      "FEATURE_SPARK_POST_COMMIT_CREATE_ITERATION": "********",
+      "HOME": "/home/codespace"
+    }
+  }
+]
+[1m[38;2;99;143;79m[1490 ms] Start[39m[22m: Run in container: readlink -f '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m1497 ms[39m[22m] /vscode/bin/linux-x64/41dd792b5e652393e7787322889ed5fdc58bd75b
+[[1m[38;2;99;143;79m1498 ms[39m[22m] 
+[1m[38;2;143;99;79m[1498 ms] Stop[39m[22m (8 ms): Run in container: readlink -f '/home/codespace/.vscode-remote/bin/41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m1498 ms[39m[22m] Extension host agent is already running.
+[1m[38;2;99;143;79m[1498 ms] Start[39m[22m: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.devport-41dd792b5e652393e7787322889ed5fdc58bd75b' [1m[38;2;86;156;214m2[39m[22m>/dev/null
+[[1m[38;2;99;143;79m1504 ms[39m[22m] [1m[38;2;86;156;214m32799[39m[22m
+[[1m[38;2;99;143;79m1508 ms[39m[22m] 
+[1m[38;2;143;99;79m[1508 ms] Stop[39m[22m (10 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.devport-41dd792b5e652393e7787322889ed5fdc58bd75b' [1m[38;2;86;156;214m2[39m[22m>/dev/null
+[1m[38;2;99;143;79m[1508 ms] Start[39m[22m: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b'
+[[1m[38;2;99;143;79m1516 ms[39m[22m] 2a4a86a7-f729-43bf-bc39-07f653de903e
+[[1m[38;2;99;143;79m1516 ms[39m[22m] 
+[1m[38;2;143;99;79m[1516 ms] Stop[39m[22m (8 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-41dd792b5e652393e7787322889ed5fdc58bd75b'
+[1m[38;2;143;99;79m[1516 ms] Stop[39m[22m (1505 ms): Resolving Remote for VSC start

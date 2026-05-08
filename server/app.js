@@ -4,6 +4,9 @@ import hbs from 'hbs';
 import indexRouter from './routes/index.js';
 import authorRouter from './routes/author.js'; // Importar
 import { registerViteHelper } from './lib/vite.js';
+import morgan from morgan;
+
+
 
 const app = express();
 
