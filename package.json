@@ -5,12 +5,16 @@
   "private": true,
   "scripts": {
     "start": "NODE_ENV=production node ./server/bin/www",
-    "dev": "DEBUG=dwssr-2026a:* nodemon ./server/bin/www",
-    "dev:vite": "vite",
+    "dev": "DEBUG=dwssr:* nodemon ./server/bin/www",
+    "dev:vite": "vite --host",
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:vite\"",
     "build:front": "vite build",
     "preview": "npm run build:front && npm run start",
-    "lint:back": "eslint server/"
+    "lint": "npm run lint:back && npm run lint:front",
+    "lint:back": "eslint \"server/*/.js\"",
+    "lint:front": "eslint \"src/*/.js\"",
+    "lint:fix": "eslint . --fix",
+    "clean:logs": "rm -rf ./server/logs/*.log"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
