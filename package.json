@@ -14,7 +14,7 @@
     "lint:back": "eslint \"server/*/.js\"",
     "lint:front": "eslint \"src/*/.js\"",
     "lint:fix": "eslint . --fix",
-    "clean:logs": "rm -rf ./server/logs/*.log"
+    "clean:logs": "rm -rf ./logs/*.log"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

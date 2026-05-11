@@ -19,7 +19,9 @@ import { registerViteHelper } from "./lib/vite.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const app = express();
+
+logger.info("creando la instancia de expressjs")
+var app = express();
 
 // 🔹 Configuración de vistas
 app.set("views", path.join(__dirname, "views"));
@@ -56,12 +58,14 @@ app.use("/author", authorRouter);
 
 // 🔹 Manejo de errores 404
 app.use(function (req, res, next) {
+  logger.warn(`se consulto la ruta no encontrada ${req.originalURL}`)
   next(createError(404));
 });
 
 // 🔹 Manejo de errores generales
 // eslint-disable-next-line no-unused-vars
 app.use(function (err, req, res, next) {
+  logger.error(`error: ${err.status || 500} -> ${err.message}`)
   res.locals.message = err.message;
   res.locals.error =
     req.app.get("env") === "development" ? err : {};

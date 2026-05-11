@@ -5,26 +5,31 @@
  */
 
 import app from '../app.js';
-import http from 'node:http';
+import createDebug from 'debug';
+import http from 'node:http'; // ✅ CORREGIDO
+//importando el logger de winston
+import logger from '../lib/winston.js';
+
+const debug = createDebug('dwssr:server')
+const info = createDebug('dwssr:info')
 
 /**
  * Get port from environment and store in Express.
  */
-
-console.info('🚀 Starting server...');
-const port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '3000');
+info('💻port normalized: ' + port);
 app.set('port', port);
-console.info('Server will listen on port ' + port);
 
 /**
  * Create HTTP server.
  */
-
-const server = http.createServer(app);
+logger.info(`🚀 Starting server on port ${port}`);
+var server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
+
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
@@ -34,14 +39,14 @@ server.on('listening', onListening);
  */
 
 function normalizePort(val) {
-  const port = parseInt(val, 10);
+  var port = parseInt(val, 10);
 
   if (isNaN(port)) {
-    return val; // named pipe
+    return val;
   }
 
   if (port >= 0) {
-    return port; // port number
+    return port;
   }
 
   return false;
@@ -56,18 +61,17 @@ function onError(error) {
     throw error;
   }
 
-  const bind =
-    typeof port === 'string'
-      ? 'Pipe ' + port
-      : 'Port ' + port;
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
 
   switch (error.code) {
     case 'EACCES':
-      console.error(bind + ' requires elevated privileges');
+      logger.error(bind + ' requires elevated privileges');
       process.exit(1);
       break;
     case 'EADDRINUSE':
-      console.error(bind + ' is already in use');
+      logger.error(bind + ' is already in use');
       process.exit(1);
       break;
     default:
@@ -80,11 +84,11 @@ function onError(error) {
  */
 
 function onListening() {
-  const addr = server.address();
-  const bind =
-    typeof addr === 'string'
-      ? 'pipe ' + addr
-      : 'port ' + addr.port;
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
 
-  console.log('Listening on ' + bind);
+  debug('🎤Listening on ' + bind);
+  logger.info(`✅ Server is listening on ${bind}port`); // ✅ CORREGIDO
 }
