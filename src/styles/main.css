@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import "./header.css";
+
+/* rutas */
+@source "../../server/views/**/*.hbs";
+@source "../**/*.{js,hbs}";

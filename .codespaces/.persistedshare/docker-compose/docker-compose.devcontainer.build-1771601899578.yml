@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      dockerfile: /tmp/devcontainercli-root/container-features/0.80.3-1771601899575/Dockerfile-with-features
+      args:
+        - BUILDKIT_INLINE_CACHE=1
+        - _DEV_CONTAINERS_BASE_IMAGE=dev_container_auto_added_stage_label
+
