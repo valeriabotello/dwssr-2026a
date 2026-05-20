@@ -8434,3 +8434,562 @@ LOGO=ubuntu-logo
 [2026-05-20T16:26:50.764Z] 
 [2026-05-20T16:26:50.764Z] Stop (13 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282'
 [2026-05-20T16:26:50.764Z] Stop (1539 ms): Resolving Remote for VSC start
+[2026-05-20T16:57:32.428Z] [16:57:32] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+[2026-05-20T17:02:19.298Z] Stop (2129986 ms): Run in container: /bin/sh
+[2026-05-20T17:02:19.301Z] Stop (2129783 ms): Run in container: /bin/sh
+[2026-05-20T17:02:19.363Z] Stop (2176162 ms): Run in container: /bin/sh
+[2026-05-20T17:02:19.365Z] Stop (2174322 ms): Run in container: /home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/codespace/.vscode-remote --accept-server-license-terms --host 127.0.0.1 --port 0 --connection-token-file /home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282 --extensions-download-dir /home/codespace/.vscode-remote/extensionsCache --start-server  --enable-remote-auto-shutdown --skip-requirements-check
+[2026-05-20T17:02:19.366Z] Stop (2176022 ms): Run in container: /bin/sh
+[2026-05-20T17:10:45.710Z] @microsoft/vscode-dev-containers-cli 0.95.0.
+[2026-05-20T17:10:45.710Z] Start: Resolving Remote for VSC start
+[2026-05-20T17:10:45.713Z] Start: Run: docker ps -q -a --filter label=Type=codespaces
+[2026-05-20T17:10:45.752Z] Stop (39 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[2026-05-20T17:10:45.753Z] Start: Run: docker inspect --type container 72fd548946c9
+[2026-05-20T17:10:45.791Z] Stop (38 ms): Run: docker inspect --type container 72fd548946c9
+[2026-05-20T17:10:45.800Z] Start: Inspecting container
+[2026-05-20T17:10:45.802Z] Stop (2 ms): Inspecting container
+[2026-05-20T17:10:45.806Z] Start: Run in container: /bin/sh
+[2026-05-20T17:10:45.812Z] Start: Run in container: uname -m
+[2026-05-20T17:10:45.883Z] x86_64
+[2026-05-20T17:10:45.883Z] 
+[2026-05-20T17:10:45.883Z] Stop (71 ms): Run in container: uname -m
+[2026-05-20T17:10:45.883Z] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2026-05-20T17:10:45.888Z] PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+[2026-05-20T17:10:45.888Z] 
+[2026-05-20T17:10:45.888Z] Stop (5 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2026-05-20T17:10:45.889Z] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[2026-05-20T17:10:45.895Z] Stop (6 ms): Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[2026-05-20T17:10:45.897Z] Start: Run in container: test -d '/home/codespace/.vscode-remote'
+[2026-05-20T17:10:45.898Z] 
+[2026-05-20T17:10:45.898Z] 
+[2026-05-20T17:10:45.898Z] Stop (1 ms): Run in container: test -d '/home/codespace/.vscode-remote'
+[2026-05-20T17:10:45.898Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2026-05-20T17:10:45.900Z] 
+[2026-05-20T17:10:45.901Z] 
+[2026-05-20T17:10:45.901Z] Exit code 1
+[2026-05-20T17:10:45.901Z] Stop (3 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2026-05-20T17:10:45.902Z] Start: Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[2026-05-20T17:10:45.908Z] {
+	"go.toolsManagement.checkForUpdates": "local",
+	"go.useLanguageServer": ********,
+	"go.gopath": "/go",
+	"python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python3",
+	"jupyter.kernels.filter": [
+		{
+			"path": "/opt/conda/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python3",
+			"type": "pythonEnvironment"
+		}
+	],
+	"lldb.executable": "/usr/bin/lldb",
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "This workspace is in a dev container running on \"Ubuntu 24.04.4 LTS\".\n\nUse `\"$BROWSER\" <url>` to open a webpage in the host's default browser.\n\nSome of the command line tools available on the `PATH`: `apt`, `dpkg`, `docker`, `git`, `gh`, `kubectl`, `curl`, `wget`, `ssh`, `scp`, `rsync`, `gpg`, `ps`, `lsof`, `netstat`, `top`, `tree`, `find`, `grep`, `zip`, `unzip`, `tar`, `gzip`, `bzip2`, `xz`"
+		}
+	]
+}
+[2026-05-20T17:10:45.908Z] 
+[2026-05-20T17:10:45.908Z] Stop (6 ms): Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[2026-05-20T17:10:45.909Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2026-05-20T17:10:45.911Z] 
+[2026-05-20T17:10:45.911Z] 
+[2026-05-20T17:10:45.911Z] Exit code 1
+[2026-05-20T17:10:45.911Z] Stop (2 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2026-05-20T17:10:45.912Z] Start: Run in container: test -d '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:10:46.006Z] 
+[2026-05-20T17:10:46.006Z] 
+[2026-05-20T17:10:46.006Z] Stop (94 ms): Run in container: test -d '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:10:46.006Z] Start: Run in container: test -d '/vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:10:46.008Z] 
+[2026-05-20T17:10:46.008Z] 
+[2026-05-20T17:10:46.008Z] Stop (2 ms): Run in container: test -d '/vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:10:46.008Z] Start: Run in container: /bin/sh
+[2026-05-20T17:10:46.012Z] Start: Run in container: test -x '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/bin/helpers/check-requirements.sh'
+[2026-05-20T17:10:46.012Z] Start: Run in container: touch '/vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:10:46.014Z] 
+[2026-05-20T17:10:46.014Z] 
+[2026-05-20T17:10:46.014Z] Stop (2 ms): Run in container: test -x '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/bin/helpers/check-requirements.sh'
+[2026-05-20T17:10:46.014Z] Start: Run in container: '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/bin/helpers/check-requirements.sh'
+[2026-05-20T17:10:46.254Z] 
+[2026-05-20T17:10:46.254Z] 
+[2026-05-20T17:10:46.254Z] Stop (242 ms): Run in container: touch '/vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:10:46.978Z] 
+[2026-05-20T17:10:46.978Z] 
+[2026-05-20T17:10:46.978Z] Stop (964 ms): Run in container: '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/bin/helpers/check-requirements.sh'
+[2026-05-20T17:10:46.979Z] userEnvProbe: loginInteractiveShell (default)
+[2026-05-20T17:10:46.980Z] Start: Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-05-20T17:10:46.982Z] 
+[2026-05-20T17:10:46.982Z] 
+[2026-05-20T17:10:46.982Z] Stop (2 ms): Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-05-20T17:10:46.982Z] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-05-20T17:10:47.460Z] Stop (478 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-05-20T17:10:47.460Z] Start: Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-05-20T17:10:47.463Z] {}
+[2026-05-20T17:10:47.463Z] 
+[2026-05-20T17:10:47.463Z] Stop (3 ms): Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-05-20T17:10:47.463Z] Start: Run in container: cat '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/product.json'
+[2026-05-20T17:10:47.523Z] Stop (60 ms): Run in container: cat '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/product.json'
+[2026-05-20T17:10:47.529Z] Running extension host agents:
+[]
+[2026-05-20T17:10:47.529Z] Start: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282' 2>/dev/null || (umask 377 && echo '29dc90be-1b4a-4f86-b5b5-4a5bb40b64be' >'/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282-116f06fd-4c86-4f43-ba8c-1934a4436500' && mv -n '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282-116f06fd-4c86-4f43-ba8c-1934a4436500' '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282' && rm -f '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282-116f06fd-4c86-4f43-ba8c-1934a4436500' && cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282')
+[2026-05-20T17:10:47.549Z] cf9bf05b-99c8-4c5f-ab3d-5db3eb922021
+[2026-05-20T17:10:47.550Z] 
+[2026-05-20T17:10:47.550Z] Stop (21 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282' 2>/dev/null || (umask 377 && echo '29dc90be-1b4a-4f86-b5b5-4a5bb40b64be' >'/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282-116f06fd-4c86-4f43-ba8c-1934a4436500' && mv -n '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282-116f06fd-4c86-4f43-ba8c-1934a4436500' '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282' && rm -f '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282-116f06fd-4c86-4f43-ba8c-1934a4436500' && cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282')
+[2026-05-20T17:10:47.550Z] Start: Starting VS Code Server
+[2026-05-20T17:10:47.551Z] Start: Preparing Extensions
+[2026-05-20T17:10:47.551Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' ; } 2> /dev/null
+[2026-05-20T17:10:47.553Z] 
+[2026-05-20T17:10:47.553Z] 
+[2026-05-20T17:10:47.553Z] Exit code 1
+[2026-05-20T17:10:47.553Z] Stop (2 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' ; } 2> /dev/null
+[2026-05-20T17:10:47.553Z] Start: Run in container: mkdir -p '/vscode/extensionsCache' && chown -R codespace /vscode/extensionsCache
+[2026-05-20T17:10:47.560Z] 
+[2026-05-20T17:10:47.561Z] 
+[2026-05-20T17:10:47.561Z] Stop (8 ms): Run in container: mkdir -p '/vscode/extensionsCache' && chown -R codespace /vscode/extensionsCache
+[2026-05-20T17:10:47.561Z] Start: Run in container: mkdir -p '/vscode/extensionsCache' && ln -s -T '/vscode/extensionsCache' '/home/codespace/.vscode-remote/extensionsCache' || ********
+[2026-05-20T17:10:47.797Z] 
+[2026-05-20T17:10:47.797Z] ln: failed to create symbolic link '/home/codespace/.vscode-remote/extensionsCache': File exists
+[2026-05-20T17:10:47.797Z] Stop (236 ms): Run in container: mkdir -p '/vscode/extensionsCache' && ln -s -T '/vscode/extensionsCache' '/home/codespace/.vscode-remote/extensionsCache' || ********
+[2026-05-20T17:10:47.798Z] Stop (247 ms): Preparing Extensions
+[2026-05-20T17:10:47.798Z] Start: Run in container: /home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/codespace/.vscode-remote --accept-server-license-terms --host 127.0.0.1 --port 0 --connection-token-file /home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282 --extensions-download-dir /home/codespace/.vscode-remote/extensionsCache --start-server  --enable-remote-auto-shutdown --skip-requirements-check
+[2026-05-20T17:10:48.957Z] *
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+[2026-05-20T17:10:48.967Z] Server bound to 127.0.0.1:43131 (IPv4)
+Extension host agent listening on 43131
+
+[2026-05-20T17:10:48.968Z] Stop (1418 ms): Starting VS Code Server
+[2026-05-20T17:10:48.968Z] Start: Run in container: echo 43131 >'/home/codespace/.vscode-remote/data/Machine/.devport-f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:10:48.975Z] 
+[2026-05-20T17:10:48.975Z] 
+[2026-05-20T17:10:48.975Z] Stop (7 ms): Run in container: echo 43131 >'/home/codespace/.vscode-remote/data/Machine/.devport-f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:10:48.975Z] Stop (3265 ms): Resolving Remote for VSC start
+[2026-05-20T17:10:49.153Z] Ignoring option 'skip-requirements-check': not supported for server.
+[2026-05-20T17:10:49.278Z] [17:10:49] Remote configuration data at /home/codespace/.vscode-remote
+[2026-05-20T17:10:49.279Z] [17:10:49] process arguments: {
+  _: [],
+  host: '127.0.0.1',
+  port: '0',
+  'connection-token-file': '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282',
+  'without-connection-token': false,
+  'disable-websocket-compression': false,
+  'print-startup-performance': false,
+  'print-ip-address': false,
+  'accept-server-license-terms': ********,
+  'server-data-dir': '/home/codespace/.vscode-remote',
+  'enable-smoke-test-driver': false,
+  'disable-telemetry': false,
+  'disable-experiments': false,
+  'disable-workspace-trust': false,
+  log: [ 'trace' ],
+  'force-disable-user-env': ********,
+  'enable-sync': false,
+  'use-test-resolver': false,
+  'extensions-download-dir': '/home/codespace/.vscode-remote/extensionsCache',
+  'update-extensions': false,
+  'list-extensions': false,
+  'show-versions': false,
+  force: false,
+  'do-not-sync': false,
+  'do-not-include-pack-dependencies': false,
+  'pre-release': false,
+  'start-server': ********,
+  'enable-remote-auto-shutdown': ********,
+  'remote-auto-shutdown-without-delay': false,
+  'use-host-proxy': false,
+  'without-browser-env-var': false,
+  help: false,
+  version: false,
+  'user-data-dir': '/home/codespace/.vscode-remote/data',
+  'builtin-extensions-dir': '/vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions',
+  'extensions-dir': '/home/codespace/.vscode-remote/extensions',
+  logsPath: '/home/codespace/.vscode-remote/data/logs/20260520T171049'
+}
+[17:10:49] 
+
+
+
+
+[2026-05-20T17:10:49.357Z] [17:10:49] [File Watcher (node.js)] Request to start watching: /home/codespace/.vscode-remote/data/Machine (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>),/home/codespace/.vscode-remote/data/Machine/settings.json (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[2026-05-20T17:10:49.361Z] [17:10:49] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/data/Machine'
+[2026-05-20T17:10:49.362Z] [17:10:49] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/data/Machine/settings.json'
+[2026-05-20T17:10:50.037Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-05-20T17:10:50.038Z] [17:10:50] ServerLifetime: scheduling shutdown timer
+[17:10:50] [AgentHostChannel] Not registering: no --agent-host-bridge-port / --agent-host-bridge-path set.
+[2026-05-20T17:10:50.043Z] [17:10:50] ExtensionManagementService#cleanUp
+[17:10:50] ExtensionManagementService#removeTempDeleteFolders
+[2026-05-20T17:10:50.044Z] [17:10:50] Extension host agent started.
+[2026-05-20T17:10:50.191Z] [17:10:50] Started scanning system extensions
+[2026-05-20T17:10:50.192Z] [17:10:50] [File Watcher (node.js)] Request to start watching: /home/codespace/.vscode-remote/extensions (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[2026-05-20T17:10:50.279Z] [17:10:50] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/dbaeumer.vscode-eslint-3.0.24
+[2026-05-20T17:10:50.280Z] [17:10:50] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/ms-azuretools.vscode-docker-2.0.0
+[17:10:50] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/esbenp.prettier-vscode-12.4.0
+[17:10:50] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/ritwickdey.liveserver-5.7.10
+[2026-05-20T17:10:50.284Z] [17:10:50] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/extensions'
+[2026-05-20T17:10:50.285Z] [17:10:50] [File Watcher (node.js)] Request to start watching: /home/codespace/.vscode-remote/extensions/extensions.json (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[2026-05-20T17:10:50.288Z] [17:10:50] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/extensions/extensions.json'
+[2026-05-20T17:10:50.360Z] [17:10:50] [127.0.0.1][8f3818d5][ExtensionHostConnection] - startParams language: es
+[17:10:50] [127.0.0.1][8f3818d5][ExtensionHostConnection] - startParams env: {}
+[2026-05-20T17:10:50.362Z] [17:10:50] [127.0.0.1][8f3818d5][ExtensionHostConnection] New connection established.
+[17:10:50] ServerLifetime: consumer 'ExtensionHost:8f3818d5' active (total: 1)
+[17:10:50] ServerLifetime: cancelling shutdown timer
+[2026-05-20T17:10:50.365Z] [17:10:50] [127.0.0.1][7317f4ff][ManagementConnection] New connection established.
+[2026-05-20T17:10:50.642Z] [17:10:50] [reconnection-grace-time] Server sending grace time to client: 10800000ms (10800s)
+[2026-05-20T17:10:50.644Z] [17:10:50] ExtensionManagementService.updateControlCache
+[2026-05-20T17:10:50.644Z] [17:10:50] Started scanning system extensions
+[2026-05-20T17:10:50.645Z] [17:10:50] Started scanning user extensions Bs {
+  scheme: 'file',
+  authority: '',
+  path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+  query: '',
+  fragment: '',
+  _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+  _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+}
+[2026-05-20T17:10:50.646Z] [17:10:50] Started scanning user extensions Bs {
+  scheme: 'file',
+  authority: '',
+  path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+  query: '',
+  fragment: '',
+  _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+  _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+}
+[2026-05-20T17:10:50.650Z] [17:10:50] Scanning extensions using UI language: es
+[2026-05-20T17:10:50.657Z] [17:10:50] resolveShellEnv(): skipped (--force-disable-user-env)
+[17:10:50] #1: https://main.vscode-cdn.net/extensions/marketplace.json - begin GET NS { original: {}, headers: [Object: null prototype] {} }
+[2026-05-20T17:10:51.034Z] [17:10:51] AbstractMcpResourceManagementService#populateLocalServers file:///home/codespace/.vscode-remote/data/User/mcp.json
+[2026-05-20T17:10:51.106Z] [17:10:51] Log level changed to info
+[2026-05-20T17:10:51.553Z] [17:10:51] [127.0.0.1][8f3818d5][ExtensionHostConnection] <402> Launched Extension Host Process.
+[2026-05-20T17:10:52.310Z] [17:10:52] [127.0.0.1][8f3818d5][ExtensionHostConnection] <402> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+[2026-05-20T17:11:01.609Z] [17:11:01] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[17:11:01] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[17:11:01] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[17:11:01] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[17:11:01] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[17:11:01] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[17:11:01] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[17:11:01] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[2026-05-20T17:11:02.772Z] [17:11:02] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[2026-05-20T17:11:03.915Z] [17:11:03] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[2026-05-20T17:11:05.912Z] [17:11:05] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[2026-05-20T17:11:08.030Z] [17:11:08] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[2026-05-20T17:11:10.803Z] [17:11:10] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[2026-05-20T17:11:14.557Z] [17:11:14] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[2026-05-20T17:11:14.937Z] [17:11:14] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[2026-05-20T17:11:16.768Z] [17:11:16] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[2026-05-20T17:11:20.407Z] [17:11:20] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[2026-05-20T17:11:21.500Z] [17:11:21] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[2026-05-20T17:11:27.460Z] [17:11:27] ptyHost was unable to resolve shell environment Error: Unable to resolve your shell environment in a reasonable time. Please review your shell configuration and restart.
+    at Timeout.<anonymous> (file:///vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/out/server-main.js:422:9604)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[2026-05-20T17:11:33.695Z] @microsoft/vscode-dev-containers-cli 0.95.0.
+[2026-05-20T17:11:33.695Z] Start: Resolving Remote for VSC start
+[2026-05-20T17:11:33.696Z] Start: Run: docker ps -q -a --filter label=Type=codespaces
+[2026-05-20T17:11:33.716Z] Stop (20 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[2026-05-20T17:11:33.717Z] Start: Run: docker inspect --type container 72fd548946c9
+[2026-05-20T17:11:33.736Z] Stop (19 ms): Run: docker inspect --type container 72fd548946c9
+[2026-05-20T17:11:33.738Z] Start: Inspecting container
+[2026-05-20T17:11:33.738Z] Stop (0 ms): Inspecting container
+[2026-05-20T17:11:33.740Z] Start: Run in container: /bin/sh
+[2026-05-20T17:11:33.743Z] Start: Run in container: uname -m
+[2026-05-20T17:11:33.791Z] x86_64
+[2026-05-20T17:11:33.792Z] 
+[2026-05-20T17:11:33.792Z] Stop (49 ms): Run in container: uname -m
+[2026-05-20T17:11:33.792Z] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2026-05-20T17:11:33.796Z] PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+[2026-05-20T17:11:33.796Z] 
+[2026-05-20T17:11:33.796Z] Stop (4 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2026-05-20T17:11:33.797Z] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[2026-05-20T17:11:33.804Z] Stop (7 ms): Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[2026-05-20T17:11:33.805Z] Start: Run in container: test -d '/home/codespace/.vscode-remote'
+[2026-05-20T17:11:33.807Z] 
+[2026-05-20T17:11:33.807Z] 
+[2026-05-20T17:11:33.807Z] Stop (2 ms): Run in container: test -d '/home/codespace/.vscode-remote'
+[2026-05-20T17:11:33.808Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2026-05-20T17:11:33.811Z] 
+[2026-05-20T17:11:33.811Z] 
+[2026-05-20T17:11:33.811Z] Exit code 1
+[2026-05-20T17:11:33.811Z] Stop (3 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2026-05-20T17:11:33.811Z] Start: Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[2026-05-20T17:11:33.817Z] {
+	"go.toolsManagement.checkForUpdates": "local",
+	"go.useLanguageServer": ********,
+	"go.gopath": "/go",
+	"python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python3",
+	"jupyter.kernels.filter": [
+		{
+			"path": "/opt/conda/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python3",
+			"type": "pythonEnvironment"
+		}
+	],
+	"lldb.executable": "/usr/bin/lldb",
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "This workspace is in a dev container running on \"Ubuntu 24.04.4 LTS\".\n\nUse `\"$BROWSER\" <url>` to open a webpage in the host's default browser.\n\nSome of the command line tools available on the `PATH`: `apt`, `dpkg`, `docker`, `git`, `gh`, `kubectl`, `curl`, `wget`, `ssh`, `scp`, `rsync`, `gpg`, `ps`, `lsof`, `netstat`, `top`, `tree`, `find`, `grep`, `zip`, `unzip`, `tar`, `gzip`, `bzip2`, `xz`"
+		}
+	]
+}
+[2026-05-20T17:11:33.817Z] 
+[2026-05-20T17:11:33.817Z] Stop (6 ms): Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[2026-05-20T17:11:33.819Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2026-05-20T17:11:33.821Z] 
+[2026-05-20T17:11:33.822Z] 
+[2026-05-20T17:11:33.822Z] Exit code 1
+[2026-05-20T17:11:33.822Z] Stop (3 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2026-05-20T17:11:33.822Z] Start: Run in container: test -d '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:11:33.824Z] 
+[2026-05-20T17:11:33.824Z] 
+[2026-05-20T17:11:33.825Z] Stop (3 ms): Run in container: test -d '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:11:33.825Z] Start: Run in container: test -d '/vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:11:33.826Z] 
+[2026-05-20T17:11:33.826Z] 
+[2026-05-20T17:11:33.826Z] Stop (1 ms): Run in container: test -d '/vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:11:33.827Z] Start: Run in container: /bin/sh
+[2026-05-20T17:11:33.830Z] Start: Run in container: test -x '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/bin/helpers/check-requirements.sh'
+[2026-05-20T17:11:33.830Z] Start: Run in container: touch '/vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:11:33.832Z] 
+[2026-05-20T17:11:33.832Z] 
+[2026-05-20T17:11:33.832Z] Stop (2 ms): Run in container: test -x '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/bin/helpers/check-requirements.sh'
+[2026-05-20T17:11:33.832Z] Start: Run in container: '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/bin/helpers/check-requirements.sh'
+[2026-05-20T17:11:33.976Z] 
+[2026-05-20T17:11:33.976Z] 
+[2026-05-20T17:11:33.976Z] Stop (146 ms): Run in container: touch '/vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:11:34.064Z] 
+[2026-05-20T17:11:34.064Z] 
+[2026-05-20T17:11:34.064Z] Stop (232 ms): Run in container: '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/bin/helpers/check-requirements.sh'
+[2026-05-20T17:11:34.064Z] userEnvProbe: loginInteractiveShell (default)
+[2026-05-20T17:11:34.065Z] Start: Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-05-20T17:11:34.069Z] 
+[2026-05-20T17:11:34.069Z] 
+[2026-05-20T17:11:34.069Z] Stop (4 ms): Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-05-20T17:11:34.069Z] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-05-20T17:11:34.494Z] Stop (425 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-05-20T17:11:34.495Z] Start: Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-05-20T17:11:34.504Z] {}
+[2026-05-20T17:11:34.504Z] 
+[2026-05-20T17:11:34.504Z] Stop (9 ms): Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-05-20T17:11:34.504Z] Start: Run in container: cat '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/product.json'
+[2026-05-20T17:11:34.512Z] Stop (8 ms): Run in container: cat '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/product.json'
+[2026-05-20T17:11:34.516Z] Running extension host agents:
+[
+  {
+    "pid": "345",
+    "ppid": "0",
+    "pgrp": "345",
+    "cwd": "/vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282",
+    "mntNS": "mnt:[4026532223]",
+    "cmd": "sh /home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/codespace/.vscode-remote --accept-server-license-terms --host 127.0.0.1 --port 0 --connection-token-file /home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282 --extensions-download-dir /home/codespace/.vscode-remote/extensionsCache --start-server  --enable-remote-auto-shutdown --skip-requirements-check ",
+    "env": {
+      "PATH": "/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet",
+      "HOSTNAME": "codespaces-4bd3aa",
+      "CODESPACES": "********",
+      "ContainerVersion": "13",
+      "RepositoryName": "dwssr-2026a",
+      "LANG": "C.UTF-8",
+      "SHELL": "/bin/bash",
+      "DOCKER_BUILDKIT": "1",
+      "DOTNET_ROOT": "/usr/share/dotnet",
+      "DOTNET_RUNNING_IN_CONTAINER": "********",
+      "DOTNET_USE_POLLING_FILE_WATCHER": "********",
+      "HUGO_DIR": "/usr/local/hugo",
+      "NVM_DIR": "/usr/local/share/nvm",
+      "NVM_SYMLINK_CURRENT": "********",
+      "NVS_DIR": "/usr/local/nvs",
+      "CONDA_DIR": "/opt/conda",
+      "CONDA_SCRIPT": "/opt/conda/etc/profile.d/conda.sh",
+      "PHP_PATH": "/usr/local/php/current",
+      "GEM_PATH": "/usr/local/rvm/gems/default:/usr/local/rvm/gems/default@global",
+      "GEM_HOME": "/usr/local/rvm/gems/default",
+      "MY_RUBY_HOME": "/usr/local/rvm/rubies/default",
+      "SDKMAN_DIR": "/usr/local/sdkman",
+      "JAVA_HOME": "/usr/local/sdkman/candidates/java/current",
+      "GOROOT": "/usr/local/go",
+      "GOPATH": "/go",
+      "ORYX_SDK_STORAGE_BASE_URL": "https://oryx-cdn.microsoft.io",
+      "ENABLE_DYNAMIC_INSTALL": "********",
+      "DYNAMIC_INSTALL_ROOT_DIR": "/opt",
+      "ORYX_PREFER_USER_INSTALLED_SDKS": "********",
+      "ORYX_DIR": "/usr/local/oryx",
+      "DEBIAN_FLAVOR": "bookworm",
+      "PYTHON_PATH": "/usr/local/python/current",
+      "PIPX_HOME": "/usr/local/py-utils",
+      "PIPX_BIN_DIR": "/usr/local/py-utils/bin",
+      "RUBY_HOME": "/usr/local/rvm/rubies/default",
+      "JAVA_ROOT": "/home/codespace/java",
+      "NODE_ROOT": "/home/codespace/nvm",
+      "PHP_ROOT": "/home/codespace/.php",
+      "PYTHON_ROOT": "/home/codespace/.python",
+      "RUBY_ROOT": "/home/codespace/.ruby",
+      "MAVEN_ROOT": "/home/codespace/.maven",
+      "HUGO_ROOT": "/home/codespace/.hugo",
+      "DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "1",
+      "NUGET_XMLDOC_MODE": "skip",
+      "ORYX_ENV_TYPE": "vsonline-present",
+      "PYTHONIOENCODING": "UTF-8",
+      "NPM_GLOBAL": "/home/codespace/.npm-global",
+      "NVS_HOME": "/home/codespace/.nvs",
+      "RVM_PATH": "/usr/local/rvm",
+      "RAILS_DEVELOPMENT_HOSTS": ".githubpreview.dev,.preview.********,.********",
+      "JUPYTERLAB_PATH": "/home/codespace/.local/bin",
+      "CLOUDENV_ENVIRONMENT_ID": "0c99d7f8-8723-4042-9a4f-aa6121c3ee75",
+      "CODESPACE_NAME": "********",
+      "GITHUB_SERVER_URL": "********",
+      "GITHUB_API_URL": "********",
+      "GITHUB_GRAPHQL_URL": "********",
+      "GITHUB_REPOSITORY": "********",
+      "INTERNAL_VSCS_TARGET_URL": "********",
+      "GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN": "********",
+      "GITHUB_CODESPACE_TOKEN": "********",
+      "GITHUB_TOKEN": "********",
+      "GITHUB_USER": "********",
+      "FEATURE_SPARK_POST_COMMIT_CREATE_ITERATION": "********",
+      "HOME": "/home/codespace"
+    }
+  }
+]
+[2026-05-20T17:11:34.516Z] Start: Run in container: readlink -f '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:11:34.524Z] /vscode/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282
+[2026-05-20T17:11:34.525Z] 
+[2026-05-20T17:11:34.525Z] Stop (9 ms): Run in container: readlink -f '/home/codespace/.vscode-remote/bin/f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:11:34.525Z] Extension host agent is already running.
+[2026-05-20T17:11:34.525Z] Start: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.devport-f6cfa2ea2403534de03f069bdf160d06451ed282' 2>/dev/null
+[2026-05-20T17:11:34.551Z] 43131
+[2026-05-20T17:11:34.551Z] 
+[2026-05-20T17:11:34.551Z] Stop (26 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.devport-f6cfa2ea2403534de03f069bdf160d06451ed282' 2>/dev/null
+[2026-05-20T17:11:34.551Z] Start: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:11:34.558Z] cf9bf05b-99c8-4c5f-ab3d-5db3eb922021
+[2026-05-20T17:11:34.559Z] 
+[2026-05-20T17:11:34.559Z] Stop (8 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-f6cfa2ea2403534de03f069bdf160d06451ed282'
+[2026-05-20T17:11:34.559Z] Stop (864 ms): Resolving Remote for VSC start

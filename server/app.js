@@ -18,11 +18,9 @@ import { configureHandlebars } from "./lib/handlebars.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-logger.info("creando la instancia de expressjs");
+logger.info("Inicia configuración de Express");
 
 const app = express();
-
-logger.info("inicia configuracion de express");
 
 // 🔥 Configurar Handlebars
 configureHandlebars(app);
@@ -35,44 +33,46 @@ app.use(
     stream: {
       write: (message) => logger.http(message.trim()),
     },
-  })
+  }),
 );
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// 🔥 Archivos estáticos de Vite (CSS, JS)
-app.use(express.static(path.join(__dirname, "../dist")));
+// 🔥 Archivos estáticos de Vite
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../dist")));
+}
 
-// 🔥 Archivos estáticos backend (imagenes, favicon, etc.)
+// 🔥 Archivos estáticos backend
 app.use(express.static(path.join(__dirname, "../public")));
 
-// 🔹 Rutas
+// 🔥 Rutas
 app.use(["/", "/index"], indexRouter);
 app.use("/users", usersRouter);
 app.use("/author", authorRouter);
 
-// 🔹 Manejo de errores 404
+// 🔥 Manejo de errores 404
 app.use(function (req, res, next) {
-  logger.warn(
-    `se consulto la ruta no encontrada ${req.originalUrl}`
-  );
-
+  logger.warn(`Se consultó la ruta no encontrada: ${req.originalUrl}`);
   next(createError(404));
 });
 
-// 🔹 Manejo de errores generales
+// 🔥 Manejo de errores generales
 // eslint-disable-next-line no-unused-vars
 app.use(function (err, req, res, next) {
-  logger.error(
-    `error: ${err.status || 500} -> ${err.message}`
-  );
+  logger.error(`Error: ${err.status || 500} --> ${err.message}`);
 
   res.locals.message = err.message;
 
   res.locals.error =
-    req.app.get("env") === "development" ? err : {};
+    req.app.get("env") === "development"
+      ? {
+          status: err.status || 500,
+          stack: err.stack,
+        }
+      : {};
 
   res.status(err.status || 500);
 
