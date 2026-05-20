@@ -1,10 +1,8 @@
 @import "tailwindcss";
-@import "daisyui/daisyui.css";
-@import "./header.css"; /* Tu archivo de la imagen image_295fd7.png */
+@plugin "daisyui";
 
-/* Ruta para que Tailwind encuentre tus clases en las vistas */
+@import "./header.css";
+
+/* rutas */
 @source "../../server/views/**/*.hbs";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@source "../**/*.{js,hbs}";
